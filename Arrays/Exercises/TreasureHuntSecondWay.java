@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class TreasureHuntSecondWay
 {
-    public static void main(String[] args)
+    public static void main(String[] args) //judge mi dava 70/100 po neznaina za men prichina,no logikata raboti
     {
         Scanner scanner = new Scanner(System.in);
 
