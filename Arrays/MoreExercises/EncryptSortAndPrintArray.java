@@ -14,13 +14,14 @@ public class EncryptSortAndPrintArray
 
         int sum = 0;
         int[] codes = new int[numberOfStrings];
-        for(int i=0;i<numberOfStrings;i++)
+        for (int i = 0; i < numberOfStrings; i++)
         {
             String str = scanner.nextLine();
-            for(int j=0;j<str.length();j++)
+            for (int j = 0; j < str.length(); j++)
             {
-                if(str.charAt(j) == 'a' || str.charAt(j) == 'e' || str.charAt(j) == 'i' || str.charAt(j) == 'o'
-                        || str.charAt(j) == 'u')
+                if (str.charAt(j) == 'a' || str.charAt(j) == 'e' || str.charAt(j) == 'i' || str.charAt(j) == 'o'
+                        || str.charAt(j) == 'u' || str.charAt(j) == 'A' || str.charAt(j) == 'E' || str.charAt(j) == 'I'
+                        || str.charAt(j) == 'O' || str.charAt(j) == 'U')
                 {
                     sum += str.charAt(j) * str.length();
                 }
@@ -49,9 +50,10 @@ public class EncryptSortAndPrintArray
             }
         }*/
 
-        for(int i=0;i<codes.length;i++)
+        for (int i = 0; i < codes.length; i++)
         {
             System.out.println(codes[i]);
         }
     }
 }
+
