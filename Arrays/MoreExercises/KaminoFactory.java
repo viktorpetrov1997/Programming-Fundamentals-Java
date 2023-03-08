@@ -36,14 +36,14 @@ public class KaminoFactory
                     if(dna[i] == 1 && dna[i+1] == 1)
                     {
                         sequenceLength++;
-                        currentIndex = i + 1;
+                        currentIndex = i + 1; //tuk trqbva da vzemem indeksa na kraqt na sequence-a vmesto negovoto nachalo i taka da sravnqvame koi e po-ot lqfo
                     }
                 }
             }
 
             if(sequenceLength > maxSequenceLength
                     || (sequenceLength == maxSequenceLength && currentIndex < bestIndex)
-                || sequenceLength == maxSequenceLength && currentIndex == bestIndex && currentSum > maxSum)
+                    || sequenceLength == maxSequenceLength && currentIndex == bestIndex && currentSum > maxSum)
             {
                 maxSequenceLength = sequenceLength;
                 bestIndex = currentIndex;
