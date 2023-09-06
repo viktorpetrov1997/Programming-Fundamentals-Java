@@ -30,7 +30,7 @@ public class LadyBugs
             {
                 field[index] = 1;
             }
-        }*/ //vtori nachin da slojim kalinkite na mqstoto im
+        }*/
 
         String input = scanner.nextLine();
         while(!input.equals("end"))
