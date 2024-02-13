@@ -25,3 +25,10 @@ Additional technologies needed by every software developer will be studied, such
 * Exam Preparation
 * QA Introduction
 * Basic Web Project
+## Acquired skills
+* Handling the standard functionality of the programming language
+* Problem analysis and reduction to computer-executable steps
+* Working with linear data structures
+* Basic HTML and CSS skills
+* Understanding the interrelationship between different IT concepts
+## Certificate 
