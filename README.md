@@ -1,2 +1,2 @@
-# Programming-Fundamentals-Java
+# Programming fundamentals in Java
 ## Course description
