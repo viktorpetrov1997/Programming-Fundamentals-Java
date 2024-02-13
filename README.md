@@ -31,4 +31,4 @@ Additional technologies needed by every software developer will be studied, such
 * Working with linear data structures
 * Basic HTML and CSS skills
 * Understanding the interrelationship between different IT concepts
-## Certificate 
+## Certificate :heavy_check_mark:
