@@ -32,5 +32,6 @@ Additional technologies needed by every software developer will be studied, such
 * Basic HTML and CSS skills
 * Understanding the interrelationship between different IT concepts
 ## Certificate :heavy_check_mark:
-![Programming Fundamentals with Java - January 2023 - Certificate](https://softuni.bg/certificates/details/169297/f32fc5c8)
+![Programming Fundamentals with Java - January 2023 - Certificate](https://github.com/viktorpetrov1997/Programming-Fundamentals-Java/assets/126717931/66d1da97-4f8c-46c0-a405-4a090ed4e10c){:target="https://softuni.bg/certificates/details/169297/f32fc5c8"}
+
 
