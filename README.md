@@ -1,3 +1,5 @@
+![logo](https://github.com/viktorpetrov1997/Programming-Fundamentals-Java/assets/126717931/aa80bdd8-15aa-4ca6-a2f5-05873a4eace9)
+
 # Programming fundamentals in Java
 ## Course description
 With Programming Fundamentals, students will begin to study SoftUni's in-house program for the comprehensive training of software engineers. The course examines fundamental concepts in programming, which are the basis for effective and quality training in the professional modules.Learners build on the knowledge gained in the Programming Basics course and begin to use more complex programming concepts and structures such as: sheets, dictionaries, objects and classes.
