@@ -1,4 +1,4 @@
-package ObjectsAndClasses;
+package ObjectsAndClasses.Lab;
 
 import java.util.ArrayList;
 import java.util.List;

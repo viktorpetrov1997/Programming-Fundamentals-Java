@@ -1,4 +1,4 @@
-package RegularExpressions;
+package RegularExpressions.Lab;
 
 import java.util.ArrayList;
 import java.util.List;

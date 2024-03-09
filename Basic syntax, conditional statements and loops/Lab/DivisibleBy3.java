@@ -1,4 +1,4 @@
-package BasicSyntaxConditionalStatementsAndLoops;
+package BasicSyntaxConditionalStatementsAndLoops.Lab;
 
 public class DivisibleBy3
 {

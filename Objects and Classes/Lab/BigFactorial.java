@@ -1,4 +1,4 @@
-package ObjectsAndClasses;
+package ObjectsAndClasses.Lab;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

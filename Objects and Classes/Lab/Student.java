@@ -1,4 +1,4 @@
-package ObjectsAndClasses;
+package ObjectsAndClasses.Lab;
 
 import java.sql.Struct;
 import java.util.ArrayList;

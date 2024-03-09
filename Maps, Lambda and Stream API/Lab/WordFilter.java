@@ -1,4 +1,4 @@
-package MapsLambdaAndStreamAPI;
+package MapsLambdaAndStreamAPI.Lab;
 
 import javax.naming.InsufficientResourcesException;
 import java.util.Arrays;

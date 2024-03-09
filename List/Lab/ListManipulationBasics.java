@@ -1,4 +1,4 @@
-package Lists;
+package Lists.Lab;
 
 import java.util.Arrays;
 import java.util.List;

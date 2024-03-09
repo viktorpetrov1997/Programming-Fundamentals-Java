@@ -1,4 +1,4 @@
-package Lists;
+package Lists.Lab;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,7 +12,7 @@ public class ListManipulationAdvanced
         Scanner scanner = new Scanner(System.in);
 
         List<Integer> numbersList = Arrays.stream(scanner.nextLine().split(" "))
-                .map(Integer::parseInt).collect(Collectors.toList());
+                .map(Integer::parseInt).toList();
 
         String input = scanner.nextLine();
         while(!input.equals("end"))

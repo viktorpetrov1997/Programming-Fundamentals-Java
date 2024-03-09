@@ -1,4 +1,4 @@
-package Methods;
+package Methods.Lab;
 
 import java.util.Scanner;
 
@@ -28,7 +28,7 @@ public class Grades
             gradeInWords = "Excellent";
         }
         return  gradeInWords;
-    } vtori nachin chrez vrushtane na String, a ne pechatane vutre vuv metoda*/
+    } Second way by returning the string from a method*/
 
     public static void printGradeInWords(double grade)
     {
@@ -64,6 +64,6 @@ public class Grades
 
         printGradeInWords(grade);
 
-        //System.out.println(printGradeInWords(grade)); vtori nachin chrez vrushtane na String ot metoda
+        //System.out.println(printGradeInWords(grade)); Second way by returning the string from a method
     }
 }

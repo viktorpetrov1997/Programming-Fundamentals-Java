@@ -1,4 +1,4 @@
-package BitwiseOperations;
+package BitwiseOperations.Lab;
 
 import java.util.Scanner;
 
