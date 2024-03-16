@@ -14,7 +14,7 @@ Additional technologies needed by every software developer will be studied, such
 * HTML and CSS Basics
 * Methods
 * Software Development Concepts - Part 1
-* List
+* Lists
 * Mid Exam - Exam Preparation
 * Objects and Classes
 * Software Development Concepts - Part 2
