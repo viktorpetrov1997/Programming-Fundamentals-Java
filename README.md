@@ -15,7 +15,7 @@ Additional technologies needed by every software developer will be studied, such
 * Methods
 * Software Development Concepts - Part 1
 * Lists
-* Mid Exam - Exam Preparation
+* Mid Exam Preparation
 * Objects and Classes
 * Software Development Concepts - Part 2
 * Maps, Lambda and Stream API
