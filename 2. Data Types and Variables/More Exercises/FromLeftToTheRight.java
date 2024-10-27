@@ -19,6 +19,7 @@ public class FromLeftToTheRight
         for(int i=0;i<lines;i++)
         {
             String twoNumbers = scanner.nextLine();
+
             for(int j=0;j<twoNumbers.length();j++)
             {
                 if(twoNumbers.charAt(j) == ' ')
@@ -39,21 +40,25 @@ public class FromLeftToTheRight
             if(leftNum > rightNum)
             {
                 int sumOfDigits = 0;
+
                 while(leftNum != 0)
                 {
                     sumOfDigits += leftNum % 10;
                     leftNum /= 10;
                 }
+
                 System.out.println(Math.abs(sumOfDigits));
             }
             else
             {
                 int sumOfDigits = 0;
+
                 while(rightNum != 0)
                 {
                     sumOfDigits += rightNum % 10;
                     rightNum /= 10;
                 }
+
                 System.out.println(Math.abs(sumOfDigits));
             }
             leftNumber = "";

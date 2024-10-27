@@ -16,6 +16,7 @@ public class BalancedBrackets
         for(int i=0;i<n;i++)
         {
             String input = scanner.nextLine();
+
             if(input.equals("("))
             {
                 countOpeningBracket++;
@@ -23,6 +24,7 @@ public class BalancedBrackets
             else if(input.equals(")"))
             {
                 countClosingBracket++;
+
                 if(countOpeningBracket - countClosingBracket != 0)
                 {
                     break;
