@@ -15,6 +15,7 @@ public class FromLeftToTheRight
         String leftNumber = "";
         String rightNumber = "";
         int indexOfBlankSpace = 0;
+
         for(int i=0;i<lines;i++)
         {
             String twoNumbers = scanner.nextLine();
@@ -30,9 +31,11 @@ public class FromLeftToTheRight
                     leftNumber += twoNumbers.charAt(j);
                 }
             }
+
             rightNumber = twoNumbers.substring(indexOfBlankSpace + 1);
             long leftNum = Long.parseLong(leftNumber);
             long rightNum = Long.parseLong(rightNumber);
+
             if(leftNum > rightNum)
             {
                 int sumOfDigits = 0;

@@ -7,6 +7,7 @@ public class TriplesOfLatinLetters
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
+
         int n = Integer.parseInt(scanner.nextLine());
 
         for (char letter1 = 'a' ; letter1 < 'a' + n ; letter1++)

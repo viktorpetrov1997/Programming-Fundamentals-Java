@@ -9,6 +9,7 @@ public class RefactorVolumeOfPyramid
         Scanner scanner = new Scanner(System.in);
 
         double length, width, height = 0;
+
         System.out.print("Length: ");
         length = Double.parseDouble(scanner.nextLine());
 

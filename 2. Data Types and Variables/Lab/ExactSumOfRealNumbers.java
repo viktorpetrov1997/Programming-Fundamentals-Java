@@ -11,11 +11,13 @@ public class ExactSumOfRealNumbers
 
         int numberOfNumbers = Integer.parseInt(scanner.nextLine());
         BigDecimal sum = new BigDecimal(0);
+
         for(int i=0;i<numberOfNumbers;i++)
         {
             BigDecimal number = new BigDecimal(scanner.nextLine());
             sum = sum.add(number);
         }
+
         System.out.println(sum);
     }
 }

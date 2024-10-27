@@ -11,6 +11,7 @@ public class ReversedChars
         char firstChar = scanner.next().charAt(0);
         char secondChar = scanner.next().charAt(0);
         char thirdChar = scanner.next().charAt(0);
+
         System.out.println("" + thirdChar + " " + secondChar + " " + firstChar);
     }
 }

@@ -11,6 +11,7 @@ public class TownInfo
         String town = scanner.nextLine();
         int population = Integer.parseInt(scanner.nextLine());
         int area = Integer.parseInt(scanner.nextLine());
+
         System.out.printf("Town %s has population of %d and area %d square km.",town,population,area);
     }
 }

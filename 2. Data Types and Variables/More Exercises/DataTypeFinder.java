@@ -9,6 +9,7 @@ public class DataTypeFinder
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
+
         while(!"END".equals(input))
         {
             int integer = 0;
@@ -65,6 +66,7 @@ public class DataTypeFinder
             }
 
             String checkBl = input.toLowerCase();
+
             switch (checkBl)
             {
                 case "true":

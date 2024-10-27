@@ -64,6 +64,7 @@ public class DataTypeFinderThirdWay
                     }
                 }
             }
+
             System.out.printf("%s is %s type%n", input, type);
             input = scanner.nextLine();
         }

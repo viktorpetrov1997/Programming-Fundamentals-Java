@@ -11,6 +11,7 @@ public class RefactorSpecialNumbers
         int n = Integer.parseInt(scanner.nextLine());
 
         int sum = 0;
+
         for(int i=1;i<=n;i++)
         {
             int number = i;

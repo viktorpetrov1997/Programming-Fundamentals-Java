@@ -9,6 +9,7 @@ public class RefactoringPrimeChecker
         Scanner scanner = new Scanner(System.in);
 
         int n = Integer.parseInt(scanner.nextLine());
+
         for(int i=2;i<=n;i++)
         {
             boolean isPrime = true;

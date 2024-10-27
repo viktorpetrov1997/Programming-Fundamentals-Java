@@ -12,6 +12,7 @@ public class BalancedBrackets
 
         int countOpeningBracket = 0;
         int countClosingBracket = 0;
+
         for(int i=0;i<n;i++)
         {
             String input = scanner.nextLine();
@@ -28,6 +29,7 @@ public class BalancedBrackets
                 }
             }
         }
+
         if(countOpeningBracket - countClosingBracket != 0)
         {
             System.out.println("UNBALANCED");
