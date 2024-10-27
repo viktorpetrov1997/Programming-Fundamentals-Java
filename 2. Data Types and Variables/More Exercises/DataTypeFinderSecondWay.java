@@ -8,28 +8,28 @@ public class DataTypeFinderSecondWay
     {
         Scanner scanner = new Scanner(System.in);
 
-        while (true)
+        while(true)
         {
             String input = scanner.nextLine();
 
-            if (input.equals("END"))
+            if(input.equals("END"))
             {
                 break;
             }
 
-            if (isInteger(input))
+            if(isInteger(input))
             {
                 System.out.printf("%s is integer type\n", input);
             }
-            else if (isFloatingPoint(input))
+            else if(isFloatingPoint(input))
             {
                 System.out.printf("%s is floating point type\n", input);
             }
-            else if (isBoolean(input))
+            else if(isBoolean(input))
             {
                 System.out.printf("%s is boolean type\n", input);
             }
-            else if (isCharacter(input))
+            else if(isCharacter(input))
             {
                 System.out.printf("%s is character type\n", input);
             }
@@ -47,7 +47,7 @@ public class DataTypeFinderSecondWay
             Integer.parseInt(input);
             return true;
         }
-        catch (NumberFormatException e)
+        catch(NumberFormatException e)
         {
             return false;
         }
@@ -60,7 +60,7 @@ public class DataTypeFinderSecondWay
             Double.parseDouble(input);
             return true;
         }
-        catch (NumberFormatException e)
+        catch(NumberFormatException e)
         {
             return false;
         }

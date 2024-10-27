@@ -31,17 +31,17 @@ public class DataTypeFinder
             }
             else
             {
-                for (int i = 0; i < input.length(); i++)
+                for(int i = 0; i < input.length(); i++)
                 {
                     char current = input.charAt(i);
-                    if (i == 0 && current == 45)
+                    if(i == 0 && current == 45)
                     {
                         integer++;
                     }
-                    if ((current >= 48 && current <= 57) || current == 46)
+                    if((current >= 48 && current <= 57) || current == 46)
                     {
                         integer++;
-                        if (current == 46)
+                        if(current == 46)
                         {
                             floating++;
                             flotPoint = true;
@@ -49,13 +49,13 @@ public class DataTypeFinder
                     }
                 }
             }
-            if (integer == input.length())
+            if(integer == input.length())
             {
-                if (flotPoint && floating == 1)
+                if(flotPoint && floating == 1)
                 {
                     type = "floating point";
                 }
-                else if (floating > 1)
+                else if(floating > 1)
                 {
 
                 }
@@ -67,7 +67,7 @@ public class DataTypeFinder
 
             String checkBl = input.toLowerCase();
 
-            switch (checkBl)
+            switch(checkBl)
             {
                 case "true":
                 case "false":

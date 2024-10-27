@@ -10,18 +10,18 @@ public class DataTypeFinderThirdWay
 
         String input = scanner.nextLine();
 
-        while (!input.equals("END")) 
+        while(!input.equals("END"))
         {
             String type = "";
 
-            if (input.equalsIgnoreCase("true") || input.equalsIgnoreCase("false")) 
+            if(input.equalsIgnoreCase("true") || input.equalsIgnoreCase("false"))
             {
                 type = "boolean";
             } 
-            else if (input.length() == 1) 
+            else if(input.length() == 1)
             {
                 char symbol = input.charAt(0);
-                if (symbol < 47 || symbol > 58) 
+                if(symbol < 47 || symbol > 58)
                 {
                     type = "character";
                 } 
@@ -35,26 +35,26 @@ public class DataTypeFinderThirdWay
             {
                 boolean isString = false;
                 boolean isFloating = false;
-                for (int i = 0; i < input.length(); i++)
+                for(int i = 0; i < input.length(); i++)
                 {
                     char currentItem = input.charAt(i);
-                    if (currentItem < 45 || currentItem > 57)
+                    if(currentItem < 45 || currentItem > 57)
                     {
                         isString = true;
                     }
 
-                    if (input.charAt(i) == 46)
+                    if(input.charAt(i) == 46)
                     {
                         isFloating = true;
                     }
                 }
-                if (isString)
+                if(isString)
                 {
                     type = "string";
                 }
                 else
                 {
-                    if (isFloating)
+                    if(isFloating)
                     {
                         type = "floating point";
                     }
