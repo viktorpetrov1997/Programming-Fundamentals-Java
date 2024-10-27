@@ -7,6 +7,7 @@ public class SpiceMustFlow
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
+
         int yield = Integer.parseInt(scanner.nextLine());
         int days = 0;
         int totalAmount = 0;

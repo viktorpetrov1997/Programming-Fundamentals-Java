@@ -7,18 +7,19 @@ public class PokeMon
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
+
         int power = Integer.parseInt(scanner.nextLine());
         int distance = Integer.parseInt(scanner.nextLine());
         int exhaustionFactor = Integer.parseInt(scanner.nextLine());
 
-
         int count = 0;
         int firstTimePower = power;
-        while (power >= distance)
+
+        while(power >= distance)
         {
             power -= distance;
             count++;
-            if (power == firstTimePower * 0.5 && exhaustionFactor != 0)
+            if(power == firstTimePower * 0.5 && exhaustionFactor != 0)
             {
                 power = power / exhaustionFactor;
             }
