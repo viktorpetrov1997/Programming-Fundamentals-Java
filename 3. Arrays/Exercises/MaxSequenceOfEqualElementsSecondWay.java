@@ -9,7 +9,7 @@ public class MaxSequenceOfEqualElementsSecondWay
     {
         Scanner scanner = new Scanner(System.in);
 
-        int [] array = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
+        int[] array = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
         int maxLength = 0;
         int length = 1;
 
@@ -41,7 +41,7 @@ public class MaxSequenceOfEqualElementsSecondWay
             }
         }
 
-        for (int i = bestStart; i < bestStart + maxLength; i++)
+        for(int i = bestStart; i < bestStart + maxLength; i++)
         {
             System.out.print(array[i] + " ");
         }

@@ -23,6 +23,7 @@ public class EqualArrays
 
         int sum = 0;
         boolean areNotIdentical = false;
+
         for(int i = 0; i < maxLength; i++)
         {
             sum += firstArr[i];

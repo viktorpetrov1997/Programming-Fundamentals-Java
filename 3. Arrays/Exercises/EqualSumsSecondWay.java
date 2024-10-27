@@ -13,22 +13,23 @@ public class EqualSumsSecondWay
 
         boolean isEqual = false;
         int equalityIndex = 0;
-        for (int i = 0; i < numbers.length; i++)
+
+        for(int i = 0; i < numbers.length; i++)
         {
             int sumLeftSide = 0;
             int sumRightSide = 0;
 
-            for (int left = 0; left < i; left++)
+            for(int left = 0; left < i; left++)
             {
                 sumLeftSide += numbers[left];
             }
 
-            for (int right = i + 1; right < numbers.length; right++)
+            for(int right = i + 1; right < numbers.length; right++)
             {
                 sumRightSide += numbers[right];
             }
 
-            if (sumLeftSide == sumRightSide)
+            if(sumLeftSide == sumRightSide)
             {
                 isEqual = true;
                 equalityIndex = i;
@@ -41,6 +42,7 @@ public class EqualSumsSecondWay
                 isEqual = false;
             }
         }
+
         if(isEqual)
         {
             System.out.println(equalityIndex);

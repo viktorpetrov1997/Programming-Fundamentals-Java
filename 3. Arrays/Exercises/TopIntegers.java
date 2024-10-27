@@ -8,9 +8,10 @@ public class TopIntegers
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
-        int [] numbers = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
 
-        for (int index = 0; index <= numbers.length - 1; index++)
+        int[] numbers = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+
+        for(int index = 0; index <= numbers.length - 1; index++)
         {
             int currentNumber = numbers[index];
 
@@ -21,10 +22,10 @@ public class TopIntegers
             }
 
             boolean isTop = false;
-            for (int i = index + 1; i <= numbers.length - 1; i++)
+            for(int i = index + 1; i <= numbers.length - 1; i++)
             {
                 int nextNumber = numbers[i];
-                if (currentNumber > nextNumber)
+                if(currentNumber > nextNumber)
                 {
                     isTop = true;
                 } else
@@ -33,7 +34,7 @@ public class TopIntegers
                     break;
                 }
             }
-            if (isTop)
+            if(isTop)
             {
                 System.out.print(currentNumber + " ");
             }

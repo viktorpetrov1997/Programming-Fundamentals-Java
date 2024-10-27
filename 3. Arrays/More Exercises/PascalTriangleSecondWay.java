@@ -33,7 +33,9 @@ public class PascalTriangleSecondWay
             {
                 System.out.print(" ");
             }
+
             --spaces;
+
             for(int j=0;j<=i;j++)
             {
                 System.out.print(a[i][j] + " ");

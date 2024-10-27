@@ -42,6 +42,7 @@ public class ArrayModifier
             }
             command = scanner.nextLine();
         }
+
         for(int i=0;i<numbers.length;i++)
         {
             if(i != numbers.length -1 )

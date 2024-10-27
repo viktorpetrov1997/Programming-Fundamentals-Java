@@ -18,18 +18,18 @@ public class TreasureHuntThirdWay
             switch (commandParts[0])
             {
                 case "Loot":
-                    for (int i = 1; i < commandParts.length; i++)
+                    for(int i = 1; i < commandParts.length; i++)
                     {
                         boolean alreadyContained = false;
-                        for (int j = 0; j < treasureChest.length; j++)
+                        for(int j = 0; j < treasureChest.length; j++)
                         {
-                            if (commandParts[i].equals(treasureChest[j]))
+                            if(commandParts[i].equals(treasureChest[j]))
                             {
                                 alreadyContained = true;
                                 break;
                             }
                         }
-                        if (!alreadyContained)
+                        if(!alreadyContained)
                         {
                             String newChest = commandParts[i] + " " + String.join(" ", treasureChest);
                             treasureChest = newChest.split(" ");
@@ -39,10 +39,10 @@ public class TreasureHuntThirdWay
                 case "Drop":
                     int position = Integer.parseInt(commandParts[1]);
 
-                    if (position <= treasureChest.length - 1 && position >= 0)
+                    if(position <= treasureChest.length - 1 && position >= 0)
                     {
                         String dropItem = treasureChest[position];
-                        for (int i = position; i < treasureChest.length - 1; i++)
+                        for(int i = position; i < treasureChest.length - 1; i++)
                         {
                             treasureChest[i] = treasureChest[i + 1];
                         }
@@ -57,18 +57,18 @@ public class TreasureHuntThirdWay
                 case "Steal":
                     int numberOfStealingItems = Integer.parseInt(commandParts[1]);
 
-                    if (numberOfStealingItems >= 0 && numberOfStealingItems < treasureChest.length)
+                    if(numberOfStealingItems >= 0 && numberOfStealingItems < treasureChest.length)
                     {
-                        for (int i = 0; i < numberOfStealingItems; i++)
+                        for(int i = 0; i < numberOfStealingItems; i++)
                         {
                             System.out.print(treasureChest[treasureChest.length - numberOfStealingItems + i]);
-                            if (i != numberOfStealingItems - 1)
+                            if(i != numberOfStealingItems - 1)
                             {
                                 System.out.print(", ");
                             }
                         }
                         String[] tempChest = new String[treasureChest.length - numberOfStealingItems];
-                        for (int i = 0; i < tempChest.length; i++)
+                        for(int i = 0; i < tempChest.length; i++)
                         {
                             tempChest[i] = treasureChest[i];
                         }
@@ -77,10 +77,10 @@ public class TreasureHuntThirdWay
                     }
                     else if(numberOfStealingItems >= 0)
                     {
-                        for (int i = 0; i < treasureChest.length; i++)
+                        for(int i = 0; i < treasureChest.length; i++)
                         {
                             System.out.print(treasureChest[i]);
-                            if (i != treasureChest.length - 1)
+                            if(i != treasureChest.length - 1)
                             {
                                 System.out.print(", ");
                             }
@@ -97,14 +97,14 @@ public class TreasureHuntThirdWay
 
         int charCounter = 0;
 
-        for (int i = 0; i < treasureCount.length(); i++)
+        for(int i = 0; i < treasureCount.length(); i++)
         {
             charCounter++;
         }
 
         double averageTreasure = (1.0 * charCounter) / treasureChest.length;
 
-        if (charCounter > 0)
+        if(charCounter > 0)
         {
             System.out.printf("Average treasure gain: %.2f pirate credits.", averageTreasure);
         }

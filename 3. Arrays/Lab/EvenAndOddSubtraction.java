@@ -19,6 +19,7 @@ public class EvenAndOddSubtraction
 
         int evenSum = 0;
         int oddSum = 0;
+
         for (int num : numArr)
         {
             if (num % 2 == 0)

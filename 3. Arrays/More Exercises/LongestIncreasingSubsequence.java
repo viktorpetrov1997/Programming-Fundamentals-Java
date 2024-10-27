@@ -17,21 +17,21 @@ public class LongestIncreasingSubsequence
         int[] len = new int[numbers.length];
         int[] previous = new int[numbers.length];
 
-        for (int i = 0; i < numbers.length; i++)
+        for(int i = 0; i < numbers.length; i++)
         {
             len[i] = 1;
             previous[i] = -1;
 
-            for (int k = 0; k < i; k++)
+            for(int k = 0; k < i; k++)
             {
-                if (numbers[k] < numbers[i] && len[k] + 1 > len[i])
+                if(numbers[k] < numbers[i] && len[k] + 1 > len[i])
                 {
                     len[i] = len[k] + 1;
                     previous[i] = k;
                 }
             }
 
-            if (len[i] > maxLength)
+            if(len[i] > maxLength)
             {
                 maxLength = len[i];
                 lastIndex = i;
@@ -41,7 +41,7 @@ public class LongestIncreasingSubsequence
         int[] lis = new int[maxLength];
         int currentIndex = maxLength - 1;
 
-        while (lastIndex != -1)
+        while(lastIndex != -1)
         {
             lis[currentIndex] = numbers[lastIndex];
             currentIndex--;

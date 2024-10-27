@@ -10,10 +10,10 @@ public class PascalTriangle
 
         int n = Integer.parseInt(scanner.nextLine());
 
-        for (int line = 1; line <= n; line++)
+        for(int line = 1; line <= n; line++)
         {
             int C = 1;
-            for (int i = 1; i <= line; i++)
+            for(int i = 1; i <= line; i++)
             {
                 System.out.print(C + " ");
                 C = C * (line - i) / i;

@@ -14,9 +14,9 @@ public class LadyBugs
 
         int[] indexesOfLadyBugs = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
 
-        for (int index : indexesOfLadyBugs)
+        for(int index : indexesOfLadyBugs)
         {
-            if (index >= 0 && index < fieldSize)
+            if(index >= 0 && index < fieldSize)
             {
                 field[index] = 1;
             }
@@ -74,7 +74,8 @@ public class LadyBugs
             }
             input = scanner.nextLine();
         }
-        for (int ladyBug : field)
+
+        for(int ladyBug : field)
         {
             System.out.print(ladyBug + " ");
         }
