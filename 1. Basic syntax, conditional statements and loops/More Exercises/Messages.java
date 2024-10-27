@@ -11,6 +11,7 @@ public class Messages
         int number = Integer.parseInt(scanner.nextLine());
 
         String word = "";
+
         for(int i=0;i<number;i++)
         {
             String code = scanner.nextLine();

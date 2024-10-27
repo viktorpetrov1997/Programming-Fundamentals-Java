@@ -9,6 +9,7 @@ public class EvenNumber
         Scanner scanner = new Scanner(System.in);
 
         boolean isEven = false;
+
         while(!isEven)
         {
             int number = Integer.parseInt(scanner.nextLine());

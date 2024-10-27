@@ -33,14 +33,17 @@ public class SpringVacation
         {
             double traveledDistance = Double.parseDouble(scanner.nextLine());
             currentExpenses += (traveledDistance * priceOfFuelPerKm);
+
             if(i == 3 || i == 5 || i == 6)
             {
                 currentExpenses += currentExpenses * 0.4;
             }
+
             if(i == 7)
             {
                 currentExpenses -= currentExpenses / numberOfPeople;
             }
+
             if(currentExpenses > budget)
             {
                 isExceeded = true;

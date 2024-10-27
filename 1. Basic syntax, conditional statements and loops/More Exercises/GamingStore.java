@@ -12,6 +12,7 @@ public class GamingStore
         double totalSpent = 0;
 
         String input = scanner.nextLine();
+
         while(!input.equals("Game Time"))
         {
             if(input.equals("OutFall 4"))

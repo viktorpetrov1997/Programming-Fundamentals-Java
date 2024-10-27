@@ -10,6 +10,7 @@ public class VendingMachine
 
         String command = scanner.nextLine();
         double sum = 0;
+
         while(!command.equals("Start"))
         {
             double coin = Double.parseDouble(command);
@@ -99,7 +100,6 @@ public class VendingMachine
                 continue;
             }
             System.out.printf("Purchased %s%n", product);
-
 
             product = scanner.nextLine();
         }
