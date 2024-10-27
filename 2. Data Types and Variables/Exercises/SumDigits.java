@@ -10,7 +10,8 @@ public class SumDigits
         int number = Integer.parseInt(scanner.nextLine());
         int sum = 0;
 
-        while (number != 0) {
+        while (number != 0)
+        {
             int lastDigit = number % 10;
             sum += lastDigit;
             number = number / 10;
