@@ -19,6 +19,7 @@ public class AdAstra
 
         StringBuilder itemsInfo = new StringBuilder();
         int totalCalories = 0;
+
         while(matcher.find())
         {
             String name = matcher.group("name");
@@ -26,6 +27,7 @@ public class AdAstra
             int calories = Integer.parseInt(matcher.group("calories"));
 
             totalCalories += calories;
+
             itemsInfo.append(String.format("Item: %s, Best before: %s, Nutrition: %d%n",name,date,calories));
         }
 

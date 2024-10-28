@@ -19,6 +19,7 @@ public class WorldTour
             {
                 int index = Integer.parseInt(commandArray[1]);
                 String string = commandArray[2];
+
                 if(index >= 0 && index <= stops.length())
                 {
                     StringBuilder newString = new StringBuilder(stops);
@@ -35,6 +36,7 @@ public class WorldTour
             {
                 int startIndex = Integer.parseInt(commandArray[1]);
                 int endIndex = Integer.parseInt(commandArray[2]);
+
                 if(startIndex >= 0 && endIndex < stops.length())
                 {
                     StringBuilder newString = new StringBuilder(stops);
@@ -51,6 +53,7 @@ public class WorldTour
             {
                 String oldString = commandArray[1];
                 String newString = commandArray[2];
+
                 if(stops.contains(oldString))
                 {
                     stops = stops.replace(oldString,newString);

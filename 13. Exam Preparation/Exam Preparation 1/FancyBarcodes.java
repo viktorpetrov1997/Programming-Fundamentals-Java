@@ -15,7 +15,7 @@ public class FancyBarcodes
 
         int n = Integer.parseInt(scanner.nextLine());
 
-        for (int i = 0; i < n; i++)
+        for(int i = 0; i < n; i++)
         {
             String barcode = scanner.nextLine();
             Matcher matcher = pattern.matcher(barcode);
@@ -24,7 +24,7 @@ public class FancyBarcodes
             {
                 String productGroup = "";
 
-                for (int j = 0; j < barcode.length(); j++)
+                for(int j = 0; j < barcode.length(); j++)
                 {
                     if(Character.isDigit(barcode.charAt(j)))
                     {

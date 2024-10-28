@@ -16,8 +16,7 @@ public class PlantDiscovery
         LinkedHashMap<String,Integer> plantRarity = new LinkedHashMap<>();
         LinkedHashMap<String,Double> plantRating = new LinkedHashMap<>();
 
-
-        for (int i = 0; i < n; i++)
+        for(int i = 0; i < n; i++)
         {
             String[] text = scanner.nextLine().split("<->");
             String plant = text[0];
@@ -29,14 +28,15 @@ public class PlantDiscovery
 
         String input = scanner.nextLine();
 
-        while (!input.equals("Exhibition"))
+        while(!input.equals("Exhibition"))
         {
 
             String [] commandArr = input.split("[: -]+");
             String command = commandArr[0];
             String plant = commandArr[1];
 
-            if(!plantRating.containsKey(plant)){
+            if(!plantRating.containsKey(plant))
+            {
                 System.out.println("error");
             }
             else
@@ -46,7 +46,7 @@ public class PlantDiscovery
                     case "Rate":
                     {
                         double rating = Integer.parseInt(commandArr[2]);
-                        if (plantRarity.containsKey(plant))
+                        if(plantRarity.containsKey(plant))
                         {
                             if(plantRating.get(plant)==0)
                             {
@@ -82,7 +82,7 @@ public class PlantDiscovery
         for(Map.Entry<String, Integer> entry : plantRarity.entrySet())
         {
             System.out.printf("- %s; Rarity: %d; Rating: %.2f%n",entry.getKey(),entry.getValue(),
-                              plantRating.get(entry.getKey()));
+                    plantRating.get(entry.getKey()));
         }
     }
 }

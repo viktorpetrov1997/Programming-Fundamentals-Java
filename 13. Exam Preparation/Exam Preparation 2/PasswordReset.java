@@ -19,7 +19,7 @@ public class PasswordReset
             if(command.equals("TakeOdd"))
             {
                 StringBuilder newPassword = new StringBuilder();
-                for (int i = 1; i < password.length(); i+=2)
+                for(int i = 1; i < password.length(); i+=2)
                 {
                     newPassword.append(password.charAt(i));
                 }
@@ -39,6 +39,7 @@ public class PasswordReset
             {
                 String substring = commandArray[1];
                 String substitute = commandArray[2];
+
                 if(password.contains(substring))
                 {
                     password = password.replace(substring,substitute);

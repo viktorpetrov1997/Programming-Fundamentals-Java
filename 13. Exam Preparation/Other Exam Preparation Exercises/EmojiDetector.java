@@ -41,13 +41,12 @@ public class EmojiDetector
             String word = matcher.group();
             ++countEmojis;
             String newWord = word.substring(2,word.length() - 2);
-            for (char ch : newWord.toCharArray())
+            for(char ch : newWord.toCharArray())
             {
                 sum += ch;
             }
 
             BigDecimal sumBigDecimal = BigDecimal.valueOf(sum);
-
             if(sumBigDecimal.compareTo(coolThreshold) > 0)
             {
                 emojis.add(word);
@@ -55,10 +54,9 @@ public class EmojiDetector
         }
 
         System.out.printf("%d emojis found in the text. The cool ones are: \n", countEmojis);
-        for (String emoji : emojis)
+        for(String emoji : emojis)
         {
             System.out.println(emoji);
         }
-
     }
 }
