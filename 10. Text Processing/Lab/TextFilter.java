@@ -21,7 +21,6 @@ public class TextFilter
         String[] bannedWords = scanner.nextLine().split(", ");
         String text = scanner.nextLine();
 
-
         for(String banWord : bannedWords)
         {
             if(text.contains(banWord))
@@ -31,6 +30,5 @@ public class TextFilter
             }
         }
         System.out.println(text);
-
     }
 }

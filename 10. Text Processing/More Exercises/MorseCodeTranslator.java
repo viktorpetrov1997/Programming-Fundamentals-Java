@@ -42,7 +42,7 @@ public class MorseCodeTranslator
 
         String[] morseCodeText = scanner.nextLine().split(" ");
 
-        for (int i = 0; i < morseCodeText.length; i++)
+        for(int i = 0; i < morseCodeText.length; i++)
         {
             String currentMorseCode = morseCodeText[i];
             if(morseCode.containsKey(currentMorseCode))

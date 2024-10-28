@@ -17,7 +17,7 @@ public class AsciiSumator
 
         int sum = 0;
 
-        for (int i = 0; i < text.length(); i++)
+        for(int i = 0; i < text.length(); i++)
         {
             int currentChar = (int)(text.charAt(i));
             if(currentChar > start && currentChar < end)

@@ -17,15 +17,18 @@ public class TreasureFinder
         while(!input.equals("find"))
         {
             int numbersIndex = -1;
+
             for(int i = 0; i < input.length(); i++)
             {
                 char newChar = (char) (input.charAt(i) - numbers[++numbersIndex]);
                 decryptedMessage.append(newChar);
+
                 if(numbersIndex == numbers.length - 1)
                 {
                     numbersIndex = -1;
                 }
             }
+
             int treasureStart = decryptedMessage.indexOf("&") + 1;
             int treasureEnd = decryptedMessage.indexOf("&", treasureStart);
             String treasure = decryptedMessage.substring(treasureStart, treasureEnd);

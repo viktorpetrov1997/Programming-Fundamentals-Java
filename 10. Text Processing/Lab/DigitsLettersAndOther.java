@@ -14,7 +14,7 @@ public class DigitsLettersAndOther
         StringBuilder letters = new StringBuilder();
         StringBuilder characters = new StringBuilder();
 
-        for (int i = 0; i < text.length(); i++)
+        for(int i = 0; i < text.length(); i++)
         {
             char symbol = text.charAt(i);
 

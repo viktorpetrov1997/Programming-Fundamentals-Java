@@ -20,7 +20,7 @@ public class ExtractPersonInformation
         {
             String text = scanner.nextLine();
 
-            for (int j = 0; j < text.length(); j++)
+            for(int j = 0; j < text.length(); j++)
             {
                 if(text.charAt(j) == '@')
                 {
@@ -39,8 +39,10 @@ public class ExtractPersonInformation
                     ageEndIndex = j;
                 }
             }
+
             String name = text.substring(nameStartIndex,nameEndIndex);
             String age = text.substring(ageStartIndex,ageEndIndex);
+
             System.out.println(name + " is " + age + " years old.");
         }
     }

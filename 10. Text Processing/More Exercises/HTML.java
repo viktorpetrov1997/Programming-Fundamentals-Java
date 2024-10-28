@@ -26,7 +26,6 @@ public class HTML
             System.out.println("    " + input);
             System.out.println("</div>");
 
-
             input = scanner.nextLine();
         }
     }

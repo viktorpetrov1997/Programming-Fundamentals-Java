@@ -15,18 +15,18 @@ public class MultiplyBigNumber
 
         int decimalReminder = 0;
 
-        if (bigNumber.isEmpty())
+        if(bigNumber.isEmpty())
         {
             bigNumber = "0";
         }
 
-        if (oneDigitNumber == 0)
+        if(oneDigitNumber == 0)
         {
             System.out.println(0);
             return;
         }
 
-        for (int i = bigNumber.length() - 1; i >= 0; i--)
+        for(int i = bigNumber.length() - 1; i >= 0; i--)
         {
             int num = (int) bigNumber.charAt(i) - 48;
             int currentSum = num * oneDigitNumber;
@@ -35,7 +35,7 @@ public class MultiplyBigNumber
             decimalReminder = currentSum / 10;
         }
 
-        if (decimalReminder > 0)
+        if(decimalReminder > 0)
         {
             finalNum.append(decimalReminder);
         }

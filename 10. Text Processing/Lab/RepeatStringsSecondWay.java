@@ -16,6 +16,7 @@ public class RepeatStringsSecondWay
         }
         return String.join("", repeatArr);
     }
+
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
@@ -23,7 +24,7 @@ public class RepeatStringsSecondWay
         String[] wordsArr = scanner.nextLine().split(" ");
 
         List<String> resultList = new ArrayList<>();
-        for (String s : wordsArr)
+        for(String s : wordsArr)
         {
             resultList.add(repeatString(s, s.length()));
         }

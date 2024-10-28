@@ -10,7 +10,7 @@ public class ReplaceRepeatingChars
 
         StringBuilder text = new StringBuilder(scanner.nextLine());
 
-        for (int i = 0; i < text.length(); i++)
+        for(int i = 0; i < text.length(); i++)
         {
             int countEqualChars = 0;
             for (int j = i+1; j < text.length(); j++)
@@ -38,7 +38,6 @@ public class ReplaceRepeatingChars
                 }
             }
         }
-
         System.out.println(text);
     }
 }

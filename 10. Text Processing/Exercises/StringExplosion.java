@@ -12,7 +12,7 @@ public class StringExplosion
 
         int strength = 0;
 
-        for (int i = 0; i < text.length(); i++)
+        for(int i = 0; i < text.length(); i++)
         {
             char currentChar = text.charAt(i);
             if(currentChar == '>')

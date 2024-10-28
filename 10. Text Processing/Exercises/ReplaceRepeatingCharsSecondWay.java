@@ -21,7 +21,7 @@ public class ReplaceRepeatingCharsSecondWay
 
         sb.append(previousChar);
 
-        for (int i = 1; i < text.length(); i++)
+        for(int i = 1; i < text.length(); i++)
         {
             char ch = text.charAt(i);
             if(ch != previousChar)
@@ -30,7 +30,6 @@ public class ReplaceRepeatingCharsSecondWay
                 previousChar = ch;
             }
         }
-
         System.out.println(sb);
     }
 }
