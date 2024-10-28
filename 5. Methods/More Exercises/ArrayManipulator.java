@@ -7,7 +7,7 @@ public class ArrayManipulator
 {
     private static void lastCountElements(int[] numbers, int count, String command)
     {
-        if (count < 0 || count > numbers.length)
+        if(count < 0 || count > numbers.length)
         {
             System.out.println("Invalid count");
             return;
@@ -18,30 +18,32 @@ public class ArrayManipulator
         int index = 0;
         int[] result = new int[numbers.length];
 
-        for (int i = 0; i < numbers.length ; i++)
+        for(int i = 0; i < numbers.length ; i++)
         {
-            if (numbers[i] % 2 == num)
+            if(numbers[i] % 2 == num)
             {
                 result[index++] = numbers[i];
             }
         }
 
-        if (index == 0)
+        if(index == 0)
         {
             System.out.println("[]");
 
-        } else
+        }
+        else
         {
             int startIndex = index - count;
-            if (startIndex < 0)
+            if(startIndex < 0)
             {
                 startIndex = 0;
             }
-            String output = "[";
-            for (int i = startIndex; i < index ; i++)
-            {
 
-                if (i < index - 1)
+            String output = "[";
+
+            for(int i = startIndex; i < index ; i++)
+            {
+                if(i < index - 1)
                 {
                     output += result[i] + ", ";
                 }
@@ -53,22 +55,21 @@ public class ArrayManipulator
             System.out.println(output);
         }
     }
-
     private static void minOdd(int[] numbers)
     {
         int minOdd = Integer.MAX_VALUE;
         int minIndex = -1;
 
-        for (int i = 0; i < numbers.length; i++)
+        for(int i = 0; i < numbers.length; i++)
         {
-            if (numbers[i] % 2 != 0 && numbers[i] <= minOdd)
+            if(numbers[i] % 2 != 0 && numbers[i] <= minOdd)
             {
                 minOdd = numbers[i];
                 minIndex = i;
             }
         }
 
-        if (minIndex == -1)
+        if(minIndex == -1)
         {
             System.out.println("No matches");
         }
@@ -77,22 +78,21 @@ public class ArrayManipulator
             System.out.println(minIndex);
         }
     }
-
     private static void minEven(int[] numbers)
     {
         int minEven = Integer.MAX_VALUE;
         int minIndex = -1;
 
-        for (int i = 0; i < numbers.length; i++)
+        for(int i = 0; i < numbers.length; i++)
         {
-            if (numbers[i] % 2 == 0 && numbers[i] <= minEven)
+            if(numbers[i] % 2 == 0 && numbers[i] <= minEven)
             {
                 minEven = numbers[i];
                 minIndex = i;
             }
         }
 
-        if (minIndex == -1)
+        if(minIndex == -1)
         {
             System.out.println("No matches");
         }
@@ -101,21 +101,21 @@ public class ArrayManipulator
             System.out.println(minIndex);
         }
     }
-
     private static void maxOdd(int[] numbers)
     {
         int maxOdd = Integer.MIN_VALUE;
         int maxIndex = -1;
 
-        for (int i = 0; i < numbers.length ; i++)
+        for(int i = 0; i < numbers.length ; i++)
         {
-            if (numbers[i] % 2 != 0 && numbers[i] >= maxOdd )
+            if(numbers[i] % 2 != 0 && numbers[i] >= maxOdd )
             {
                 maxOdd = numbers[i];
                 maxIndex = i;
             }
         }
-        if (maxIndex == -1)
+
+        if(maxIndex == -1)
         {
             System.out.println("No matches");
         }
@@ -124,22 +124,21 @@ public class ArrayManipulator
             System.out.println(maxIndex);
         }
     }
-
     private static void maxEven(int[] numbers)
     {
         int maxEven = Integer.MIN_VALUE;
         int maxIndex = -1;
 
-        for (int i = 0; i < numbers.length ; i++)
+        for(int i = 0; i < numbers.length ; i++)
         {
-            if (numbers[i] % 2 == 0 && numbers[i] >= maxEven )
+            if(numbers[i] % 2 == 0 && numbers[i] >= maxEven )
             {
                 maxEven = numbers[i];
                 maxIndex = i;
             }
         }
 
-        if (maxIndex == -1)
+        if(maxIndex == -1)
         {
             System.out.println("No matches");
         }
@@ -148,12 +147,11 @@ public class ArrayManipulator
             System.out.println(maxIndex);
         }
     }
-
     private static int[] exchange(int[] numbers, String s)
     {
         int index = Integer.parseInt(s);
 
-        if (index < 0 || index >= numbers.length)
+        if(index < 0 || index >= numbers.length)
         {
             System.out.println("Invalid index");
         }
@@ -162,22 +160,23 @@ public class ArrayManipulator
             int count = 0;
             int [] result = new int[numbers.length];
 
-            for (int i = index + 1; i < numbers.length ; i++)
+            for(int i = index + 1; i < numbers.length ; i++)
             {
                 result[count++] = numbers[i];
             }
-            for (int i = 0; i <= index ; i++)
+
+            for(int i = 0; i <= index ; i++)
             {
                 result[count++] = numbers[i];
             }
+
             numbers = result;
         }
         return numbers;
     }
-
     private static void firstCountElements(int[] numbers, int count, String command)
     {
-        if (count < 0 || count > numbers.length)
+        if(count < 0 || count > numbers.length)
         {
             System.out.println("Invalid count");
             return;
@@ -188,20 +187,20 @@ public class ArrayManipulator
         int index = 0;
         int[] result = new int[numbers.length];
 
-        for (int i = 0; i < numbers.length ; i++)
+        for(int i = 0; i < numbers.length ; i++)
         {
-            if (numbers[i] % 2 == num)
+            if(numbers[i] % 2 == num)
             {
                 result[index++] = numbers[i];
 
-                if (index == count)
+                if(index == count)
                 {
                     break;
                 }
             }
         }
 
-        if (index == 0)
+        if(index == 0)
         {
             System.out.println("[]");
 
@@ -209,9 +208,9 @@ public class ArrayManipulator
         else
         {
             String output = "[";
-            for (int i = 0; i < index ; i++)
+            for(int i = 0; i < index ; i++)
             {
-                if (i < index - 1)
+                if(i < index - 1)
                 {
                     output += result[i] + ", ";
                 }
@@ -236,41 +235,41 @@ public class ArrayManipulator
         {
             String[] command = input.split("\\s+");
 
-            if ("exchange".equals(command[0]))
+            if("exchange".equals(command[0]))
             {
                 numbers = exchange(numbers, command[1]);
 
             }
-            else if ("max".equals(command[0]))
+            else if("max".equals(command[0]))
             {
-                if ("even".equals(command[1]))
+                if("even".equals(command[1]))
                 {
                     maxEven(numbers);
 
                 }
-                else if ("odd".equals(command[1]))
+                else if("odd".equals(command[1]))
                 {
                     maxOdd(numbers);
                 }
             }
-            else if ("min".equals(command[0]))
+            else if("min".equals(command[0]))
             {
-                if ("even".equals(command[1]))
+                if("even".equals(command[1]))
                 {
                     minEven(numbers);
                 }
-                else if ("odd".equals(command[1]))
+                else if("odd".equals(command[1]))
                 {
                     minOdd(numbers);
                 }
 
             }
-            else if ("first".equals(command[0]))
+            else if("first".equals(command[0]))
             {
                 firstCountElements(numbers, Integer.parseInt(command[1]), command[2]);
 
             }
-            else  if ("last".equals(command[0]))
+            else  if("last".equals(command[0]))
             {
                 lastCountElements(numbers, Integer.parseInt(command[1]), command[2]);
             }

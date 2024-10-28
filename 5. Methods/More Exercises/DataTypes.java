@@ -8,12 +8,10 @@ public class DataTypes
     {
         return number * 2;
     }
-
     private static double printNumber(double number)
     {
         return number * 1.5;
     }
-
     private static String printNumber(String number)
     {
         return "$" + number + "$";

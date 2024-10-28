@@ -19,6 +19,7 @@ public class AddAndSubtract
 
         int sum = sum(firstInteger,secondInteger);
         int result = sum - thirdInteger;
+
         System.out.println(result);
     }
 }

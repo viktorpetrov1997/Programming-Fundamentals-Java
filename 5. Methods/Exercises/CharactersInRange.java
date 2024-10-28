@@ -28,6 +28,7 @@ public class CharactersInRange
 
         char a = scanner.nextLine().charAt(0);
         char b = scanner.nextLine().charAt(0);
+
         charactersInRange(a,b);
     }
 }

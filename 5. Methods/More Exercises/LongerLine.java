@@ -8,7 +8,6 @@ public class LongerLine
     {
         return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
     }
-
     private static void findLongerLine(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4)
     {
         double firstLineLength = findLineLength(x1,y1,x2,y2);
@@ -58,6 +57,7 @@ public class LongerLine
         int y3 = Integer.parseInt(scanner.nextLine());
         int x4 = Integer.parseInt(scanner.nextLine());
         int y4 = Integer.parseInt(scanner.nextLine());
+
         findLongerLine(x1,y1,x2,y2,x3,y3,x4,y4);
     }
 }

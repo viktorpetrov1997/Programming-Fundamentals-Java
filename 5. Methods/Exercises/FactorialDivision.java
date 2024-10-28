@@ -25,6 +25,7 @@ public class FactorialDivision
         long secondFactorial = calculateFactorial(secondNumber);
 
         double result = firstFactorial * 1.0 / secondFactorial;
+
         System.out.printf("%.2f",result);
     }
 }

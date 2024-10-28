@@ -7,6 +7,7 @@ public class Orders
     private static void priceOfOrder(String product, int quantity)
     {
         double price = 0;
+
         if(product.equals("coffee"))
         {
             price = 1.50;
@@ -23,6 +24,7 @@ public class Orders
         {
             price = 2.00;
         }
+
         System.out.printf("%.2f",price * quantity);
     }
 

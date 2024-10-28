@@ -7,6 +7,7 @@ public class MathOperations
     private static int calculate(int a, String operator, int b)
     {
         int result = 0;
+
         if(operator.equals("+"))
         {
             result = a + b;
@@ -23,6 +24,7 @@ public class MathOperations
         {
             result = a / b;
         }
+
         return result;
     }
 
@@ -33,6 +35,7 @@ public class MathOperations
         int a = Integer.parseInt(scanner.nextLine());
         String operator = scanner.nextLine();
         int b = Integer.parseInt(scanner.nextLine());
+
         System.out.println(calculate(a,operator,b));
     }
 }

@@ -33,6 +33,7 @@ public class Grades
     public static void printGradeInWords(double grade)
     {
         String gradeInWords = "";
+
         if(grade >= 2 && grade <= 2.99)
         {
             gradeInWords = "Fail";
@@ -53,6 +54,7 @@ public class Grades
         {
             gradeInWords = "Excellent";
         }
+
         System.out.println(gradeInWords);
     }
 

@@ -31,6 +31,7 @@ public class CenterPoint
         int y1 = Integer.parseInt(scanner.nextLine());
         int x2 = Integer.parseInt(scanner.nextLine());
         int y2 = Integer.parseInt(scanner.nextLine());
+
         printPoints(x1,y1,x2,y2);
     }
 }

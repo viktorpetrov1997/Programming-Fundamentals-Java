@@ -7,12 +7,14 @@ public class TopNumber
     private static boolean isSumDigitsDivisible(int number)
     {
         int sumOfDigits = 0;
+
         while(number > 0)
         {
             int digit = number % 10;
             sumOfDigits += digit;
             number /= 10;
         }
+
         return sumOfDigits % 8 == 0;
     }
 

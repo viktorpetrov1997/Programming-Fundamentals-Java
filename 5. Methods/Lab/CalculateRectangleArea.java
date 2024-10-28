@@ -16,6 +16,7 @@ public class CalculateRectangleArea
         double width = Double.parseDouble(scanner.nextLine());
         double height = Double.parseDouble(scanner.nextLine());
         double area = getRectangleArea(width,height);
+
         System.out.printf("%.0f",area);
     }
 }

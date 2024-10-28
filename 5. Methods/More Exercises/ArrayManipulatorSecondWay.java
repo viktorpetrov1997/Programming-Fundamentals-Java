@@ -14,8 +14,8 @@ public class ArrayManipulatorSecondWay
         else
         {
             int[] newArray = new int[numbers.length];
-
             int newArrayIndex = 0;
+
             for(int i=index + 1;i<numbers.length;i++)
             {
                 newArray[newArrayIndex++] = numbers[i];
@@ -25,15 +25,16 @@ public class ArrayManipulatorSecondWay
             {
                 newArray[newArrayIndex++] = numbers[i];
             }
+
             numbers = newArray;
         }
         return numbers;
     }
-
     private static void max(int[] numbers, String command)
     {
         int maxNumber = Integer.MIN_VALUE;
         int maxIndex = -1;
+
         if(command.equals("even"))
         {
             for(int i=0;i<numbers.length;i++)
@@ -56,6 +57,7 @@ public class ArrayManipulatorSecondWay
                 }
             }
         }
+
         if(maxIndex == -1)
         {
             System.out.println("No matches");
@@ -65,11 +67,11 @@ public class ArrayManipulatorSecondWay
             System.out.println(maxIndex);
         }
     }
-
     private static void min(int[] numbers, String command)
     {
         int minNumber = Integer.MAX_VALUE;
         int minIndex = -1;
+
         if(command.equals("even"))
         {
             for(int i=0;i<numbers.length;i++)
@@ -92,6 +94,7 @@ public class ArrayManipulatorSecondWay
                 }
             }
         }
+
         if(minIndex == -1)
         {
             System.out.println("No matches");
@@ -101,7 +104,6 @@ public class ArrayManipulatorSecondWay
             System.out.println(minIndex);
         }
     }
-
     private static void printFirstEvenOrOdd(int number[], int count, String command)
     {
         if(count < 0 || count > number.length)
@@ -135,6 +137,7 @@ public class ArrayManipulatorSecondWay
                 }
             }
         }
+
         if(firstIndex == 0)
         {
             System.out.println("[]");
@@ -142,6 +145,7 @@ public class ArrayManipulatorSecondWay
         else
         {
             String output = "[";
+
             for(int i=0;i<firstIndex;i++)
             {
                 if(i != firstIndex - 1)
@@ -153,10 +157,10 @@ public class ArrayManipulatorSecondWay
                     output += first[i] + "]";
                 }
             }
+
             System.out.println(output);
         }
     }
-
     private static void printLastEvenOrOdd(int number[], int count, String command)
     {
         if(count < 0 || count > number.length)
@@ -190,6 +194,7 @@ public class ArrayManipulatorSecondWay
                 }
             }
         }
+
         if(lastIndex == 0)
         {
             System.out.println("[]");
@@ -254,6 +259,7 @@ public class ArrayManipulatorSecondWay
         }
 
         System.out.print("[");
+
         for(int i=0;i<numbers.length;i++)
         {
             if(i != numbers.length - 1)

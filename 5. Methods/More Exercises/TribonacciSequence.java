@@ -25,6 +25,7 @@ public class TribonacciSequence
         Scanner scanner = new Scanner(System.in);
 
         int endRange = Integer.parseInt(scanner.nextLine());
+
         printTribonacciSequence(endRange);
     }
 }

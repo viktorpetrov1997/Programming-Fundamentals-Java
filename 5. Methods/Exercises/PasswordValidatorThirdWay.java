@@ -29,6 +29,7 @@ public class PasswordValidatorThirdWay
     {
         String digits = "0123456789";
         int numberOfDigits = 0;
+
         for(int i=0;i<password.length();i++)
         {
             String currentDigit = String.valueOf(password.charAt(i));
@@ -37,6 +38,7 @@ public class PasswordValidatorThirdWay
                 ++numberOfDigits;
             }
         }
+
         return numberOfDigits >= 2;
     }
 
@@ -47,25 +49,24 @@ public class PasswordValidatorThirdWay
         String password = scanner.nextLine();
 
         boolean isPasswordValidLength = isValidLength(password);
-        if (!isPasswordValidLength)
+        if(!isPasswordValidLength)
         {
             System.out.println("Password must be between 6 and 10 characters");
         }
 
         boolean isValidPasswordContent = isValidContent(password);
-        if (!isValidPasswordContent)
+        if(!isValidPasswordContent)
         {
             System.out.println("Password must consist only of letters and digits");
         }
 
-
         boolean isValidPasswordCountDigits = isValidCountDigits(password);
-        if (!isValidPasswordCountDigits)
+        if(!isValidPasswordCountDigits)
         {
             System.out.println("Password must have at least 2 digits");
         }
 
-        if (isPasswordValidLength && isValidPasswordContent && isValidPasswordCountDigits)
+        if(isPasswordValidLength && isValidPasswordContent && isValidPasswordCountDigits)
         {
             System.out.println("Password is valid");
         }

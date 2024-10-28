@@ -11,10 +11,10 @@ public class PrintingTriangleSecondWay
             printLine(1,i);
         }
 
-         for(int i=n-1;i>=1;i--)
-         {
-             printLine(1,i);
-         }
+        for(int i=n-1;i>=1;i--)
+        {
+            printLine(1,i);
+        }
     }
 
     private static void printLine(int start, int end)

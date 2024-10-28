@@ -41,6 +41,7 @@ public class MultiplyEvensByOdds
         Scanner scanner = new Scanner(System.in);
 
         int number = Math.abs(Integer.parseInt(scanner.nextLine()));
+
         System.out.println(getMultipleOfEvenAndOdds(number));
     }
 }

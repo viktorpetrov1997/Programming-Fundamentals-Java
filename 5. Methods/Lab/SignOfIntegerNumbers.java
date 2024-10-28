@@ -15,12 +15,18 @@ public class SignOfIntegerNumbers
         //printSign(Integer.parseInt(scanner.nextLine())); vtori nachin da go izvikam kato direkto vuvejdam chisloto po tozi nachin bez predvaritelno da go deklariram
     }
 
-    public static void printSign(int num) {
-        if (num > 0) {
+    public static void printSign(int num)
+    {
+        if(num > 0)
+        {
             System.out.printf("The number %d is positive.", num);
-        } else if (num < 0) {
+        }
+        else if(num < 0)
+        {
             System.out.printf("The number %d is negative.", num);
-        } else {
+        }
+        else
+        {
             System.out.println("The number 0 is zero.");
         }
     }

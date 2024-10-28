@@ -8,6 +8,7 @@ public class MultiplicationSign
     {
         boolean hasNegativeNumber = false;
         int countNegativeNumbers = 0;
+
         for(int i=0;i<numbers.length;i++)
         {
             if(numbers[i] == 0)
@@ -44,6 +45,7 @@ public class MultiplicationSign
         numbers[0] = num1;
         numbers[1] = num2;
         numbers[2] = num3;
+
         printProduct(numbers);
     }
 }

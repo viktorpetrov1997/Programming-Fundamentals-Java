@@ -8,6 +8,7 @@ public class VowelsCount
     {
         String vowels = "AaEeIiOoUu";
         int numberOfVowels = 0;
+
         for(int i=0;i<str.length();i++)
         {
             String currentLetter = String.valueOf(str.charAt(i));
@@ -16,6 +17,7 @@ public class VowelsCount
                 ++numberOfVowels;
             }
         }
+
         System.out.println(numberOfVowels);
     }
 
@@ -24,6 +26,7 @@ public class VowelsCount
         Scanner scanner = new Scanner(System.in);
 
         String string = scanner.nextLine();
+
         countVowels(string);
     }
 }

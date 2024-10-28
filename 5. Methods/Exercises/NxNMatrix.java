@@ -18,7 +18,7 @@ public class NxNMatrix
         Scanner scanner = new Scanner(System.in);
 
         int num = Integer.parseInt(scanner.nextLine());
-        for (int i = 0; i < num; i++)
+        for(int i = 0; i < num; i++)
         {
             printLine(num);
         }

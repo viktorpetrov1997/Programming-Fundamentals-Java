@@ -20,6 +20,7 @@ public class RepeatString
 
         String string = scanner.nextLine();
         int repeat = Integer.parseInt(scanner.nextLine());
+
         System.out.print(repeatString(string,repeat));
     }
 }
