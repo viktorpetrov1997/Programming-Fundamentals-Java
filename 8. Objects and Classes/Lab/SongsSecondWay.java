@@ -14,7 +14,6 @@ public class SongsSecondWay
     {
         return time;
     }
-
     public void setTime(String time)
     {
         this.time = time;
@@ -29,12 +28,10 @@ public class SongsSecondWay
     {
         this.name = name;
     }
-
     public String getTypeList()
     {
         return typeList;
     }
-
     public void setTypeList(String typeList)
     {
         this.typeList = typeList;
@@ -48,7 +45,7 @@ public class SongsSecondWay
 
         List<SongsSecondWay> songs = new ArrayList<>();
 
-        for (int i = 0; i < numberOfSongs; i++)
+        for(int i = 0; i < numberOfSongs; i++)
         {
             String[] songsArray = scanner.nextLine().split("_");
 
@@ -60,7 +57,9 @@ public class SongsSecondWay
 
             songs.add(song);
         }
+
         String type = scanner.nextLine();
+
         if(type.equals("all"))
         {
             for(SongsSecondWay song : songs)

@@ -23,7 +23,7 @@ public class AdvertisementMessage
 
         Random random = new Random();
 
-        for (int i = 0; i < numberOfMessages; i++)
+        for(int i = 0; i < numberOfMessages; i++)
         {
             System.out.printf("%s %s %s - %s."
                     , phrases[random.nextInt(phrases.length)]

@@ -25,6 +25,7 @@ public class Main
                 listOfPeople.add(person);
             }
         }
+
         for(Person person : listOfPeople)
         {
             System.out.println(person);

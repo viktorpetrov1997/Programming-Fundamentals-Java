@@ -13,7 +13,7 @@ public class Main
 
         List<Employee> employeeList = new ArrayList<>();
 
-        for (int i = 0; i < N; i++)
+        for(int i = 0; i < N; i++)
         {
             String input = scanner.nextLine();
 
@@ -50,6 +50,7 @@ public class Main
         double highestAverageSalary = 0;
         double sum = 0;
         double count = 0;
+
         for(Employee employee1 : employeeList)
         {
             for(Employee employee2 : employeeList)

@@ -10,7 +10,6 @@ public class VehicleCatalogue
     private String model;
     private String color;
     private int horsePower;
-
     public VehicleCatalogue(String typeOfVehicle, String model, String color, int horsePower)
     {
         this.typeOfVehicle = typeOfVehicle;
@@ -28,17 +27,14 @@ public class VehicleCatalogue
                 "Color: " + color + "\n" +
                 "Horsepower: " + horsePower;
     }
-
     public String getTypeOfVehicle()
     {
         return typeOfVehicle;
     }
-
     public String getModel()
     {
         return model;
     }
-
     public int getHorsePower()
     {
         return horsePower;
@@ -82,6 +78,7 @@ public class VehicleCatalogue
         int numberOfTrucks = 0;
         double carsHorsePower = 0;
         double trucksHorsePower = 0;
+
         for(VehicleCatalogue vehicle: vehicleCatalogueList)
         {
             if(vehicle.getTypeOfVehicle().equals("car"))
@@ -99,9 +96,9 @@ public class VehicleCatalogue
         double averageCars = carsHorsePower /  numberOfCars;
         if(numberOfCars == 0) averageCars = 0;
         System.out.printf("Cars have average horsepower of: %.2f.%n", averageCars);
+
         double averageTrucks = trucksHorsePower / numberOfTrucks;
         if(numberOfTrucks == 0) averageTrucks = 0;
         System.out.printf("Trucks have average horsepower of: %.2f.", averageTrucks);
-
     }
 }

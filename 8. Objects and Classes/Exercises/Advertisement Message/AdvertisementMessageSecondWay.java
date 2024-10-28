@@ -12,7 +12,7 @@ public class AdvertisementMessageSecondWay //this class uses the class Message
 
         Message message = new Message();
 
-        for (int i = 0; i < n; i++)
+        for(int i = 0; i < n; i++)
         {
             message.randomMessage();
         }

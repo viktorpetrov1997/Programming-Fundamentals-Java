@@ -23,7 +23,7 @@ public class GroomingSalon
 
     public boolean remove(String petName)
     {
-        for (int i = 0; i < data.size(); i++)
+        for(int i = 0; i < data.size(); i++)
         {
             if(data.get(i).getName().equals(petName))
             {
@@ -33,7 +33,6 @@ public class GroomingSalon
         }
         return false;
     }
-
     public Pet getPet(String name, String owner)
     {
         for(Pet pet : data)
@@ -50,18 +49,18 @@ public class GroomingSalon
     {
         return this.data.size();
     }
-
     public String getStatistics()
     {
         StringBuilder builder = new StringBuilder("The grooming salon has the following clients:"  + System.lineSeparator());
 
-        for (Pet pet : data)
+        for(Pet pet : data)
         {
             builder.append(pet.getName());
             builder.append(" ");
             builder.append(pet.getOwner());
             builder.append(System.lineSeparator());
         }
+
         return builder.toString().trim();
     }
 }

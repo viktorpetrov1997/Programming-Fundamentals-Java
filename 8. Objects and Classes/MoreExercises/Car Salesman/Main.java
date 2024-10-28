@@ -8,9 +8,9 @@ public class Main
 {
     public static boolean isNumeric(String str)
     {
-        for (char c : str.toCharArray())
+        for(char c : str.toCharArray())
         {
-            if (!Character.isDigit(c)) return false;
+            if(!Character.isDigit(c)) return false;
         }
         return true;
     }
@@ -22,7 +22,7 @@ public class Main
         int N = Integer.parseInt(scanner.nextLine());
 
         List<Engine> engineList = new ArrayList<>();
-        for (int i = 0; i < N; i++)
+        for(int i = 0; i < N; i++)
         {
             String[] engineInfo = scanner.nextLine().split(" ");
 
@@ -53,7 +53,7 @@ public class Main
         int M = Integer.parseInt(scanner.nextLine());
 
         List<Car> carList = new ArrayList<>();
-        for (int i = 0; i < M; i++)
+        for(int i = 0; i < M; i++)
         {
             String[] carInfo = scanner.nextLine().split(" ");
 
@@ -91,10 +91,9 @@ public class Main
             carList.add(car);
         }
 
-        for (Car car : carList)
+        for(Car car : carList)
         {
             System.out.println(car);
         }
-
     }
 }

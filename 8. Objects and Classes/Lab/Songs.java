@@ -17,7 +17,8 @@ public class Songs
         List<String> typeList = new ArrayList<>();
         List<String> name = new ArrayList<>();
         List<String> time = new ArrayList<>();
-        for (int i = 0; i < numberOfSongs; i++)
+
+        for(int i = 0; i < numberOfSongs; i++)
         {
             String song = scanner.nextLine();
             String[] songArray = song.split("_");
@@ -26,17 +27,19 @@ public class Songs
             name.add(songArray[1]);
             time.add(songArray[2]);
         }
+
         String type = scanner.nextLine();
+
         if(type.equals("all"))
         {
-            for (int i = 0; i < name.size(); i++)
+            for(int i = 0; i < name.size(); i++)
             {
                 System.out.println(name.get(i));
             }
         }
         else
         {
-            for (int i = 0; i < name.size(); i++)
+            for(int i = 0; i < name.size(); i++)
             {
                 if(typeList.get(i).equals(type))
                 {

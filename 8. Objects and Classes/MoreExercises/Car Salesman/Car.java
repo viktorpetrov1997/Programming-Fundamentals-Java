@@ -6,7 +6,6 @@ public class Car
     Engine engine;
     String weight;
     String color;
-
     public Car(String model, Engine engine)
     {
         this.model = model;
@@ -14,17 +13,14 @@ public class Car
         this.weight = "n/a";
         this.color = "n/a";
     }
-
     public void setWeight(String weight)
     {
         this.weight = weight;
     }
-
     public void setColor(String color)
     {
         this.color = color;
     }
-
     public Engine getEngine()
     {
         return engine;

@@ -14,10 +14,11 @@ public class BigFactorial
 
         BigInteger factorial = new BigInteger("1");
 
-        for (int i = 1; i <= N; i++)
+        for(int i = 1; i <= N; i++)
         {
             factorial = factorial.multiply(BigInteger.valueOf(i));
         }
+
         System.out.println(factorial);
     }
 }

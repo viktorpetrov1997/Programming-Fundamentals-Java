@@ -9,7 +9,6 @@ public class Main
         System.out.println(dog);
         salon.add(dog);
 
-
         System.out.println(salon.remove("Ellias"));
 
         System.out.println(salon.remove("Pufa"));
@@ -21,8 +20,6 @@ public class Main
         salon.add(cat);
 
         salon.add(bunny);
-
-
 
         Pet pet = salon.getPet("Bella", "Mia");
 

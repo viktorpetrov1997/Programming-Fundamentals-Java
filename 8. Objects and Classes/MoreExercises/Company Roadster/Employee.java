@@ -4,12 +4,10 @@ public class Employee
 {
     String name;
     double salary;
-
     String position;
     String department;
     String email;
     int age;
-
     public Employee(String name, double salary, String position, String department)
     {
         this.name = name;
@@ -25,7 +23,6 @@ public class Employee
     {
         return String.format("%s %.2f %s %s",name,salary,email,age);
     }
-
     public void setEmail(String email)
     {
         this.email = email;
@@ -35,12 +32,10 @@ public class Employee
     {
         this.age = age;
     }
-
     public String getDepartment()
     {
         return department;
     }
-
     public double getSalary()
     {
         return salary;

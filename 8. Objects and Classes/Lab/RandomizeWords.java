@@ -14,7 +14,8 @@ public class RandomizeWords
         String[] wordsArray = input.split(" ");
 
         Random random = new Random();
-        for (int i = 0; i < wordsArray.length; i++)
+
+        for(int i = 0; i < wordsArray.length; i++)
         {
             int indexX = random.nextInt(wordsArray.length);
             int indexY = random.nextInt(wordsArray.length);
@@ -23,6 +24,7 @@ public class RandomizeWords
             wordsArray[indexX] = wordsArray[indexY];
             wordsArray[indexY] = word;
         }
+
         System.out.println(String.join(System.lineSeparator(),wordsArray));
     }
 }

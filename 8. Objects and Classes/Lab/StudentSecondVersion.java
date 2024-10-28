@@ -60,7 +60,7 @@ public class StudentSecondVersion
 
     private static int findStudentIndex(List<StudentSecondVersion> students, String firstName, String lastName)
     {
-        for (int i = 0; i < students.size(); i++)
+        for(int i = 0; i < students.size(); i++)
         {
             String firstNameList = students.get(i).getFirstName();
             String lastNameList = students.get(i).getLastName();
@@ -99,7 +99,9 @@ public class StudentSecondVersion
 
             input = scanner.nextLine();
         }
+
         String city = scanner.nextLine();
+
         for(StudentSecondVersion student : students)
         {
             if(student.getCity().equals(city))

@@ -18,7 +18,6 @@ public class Main // 83/100
         }
         return false;
     }
-
     public static boolean creatorExists(List<Team> teamList,String user)
     {
         for(Team team : teamList)
@@ -30,12 +29,11 @@ public class Main // 83/100
         }
         return false;
     }
-
     public static boolean memberExists(List<Team> teamList,String user)
     {
-        for (int i = 0; i < teamList.size(); i++)
+        for(int i = 0; i < teamList.size(); i++)
         {
-            for (int j = 0; j < teamList.get(i).getMembersSize(); j++)
+            for(int j = 0; j < teamList.get(i).getMembersSize(); j++)
             {
                 if(teamList.get(i).getMembers().get(j).equals(user))
                 {
@@ -54,7 +52,7 @@ public class Main // 83/100
 
         List<Team> teamList = new ArrayList<>();
 
-        for (int i = 0; i < numberOfTeams; i++)
+        for(int i = 0; i < numberOfTeams; i++)
         {
             String[] input = scanner.nextLine().split("-");
 
@@ -111,13 +109,14 @@ public class Main // 83/100
         teamList.sort(Comparator.comparing(Team::getTeamName));
         teamList.sort(Comparator.comparing(Team::getMembersSize).reversed());
 
-        for (int i = 0; i < teamList.size(); i++)
+        for(int i = 0; i < teamList.size(); i++)
         {
             if(!teamList.get(i).getMembers().isEmpty())
             {
                 System.out.println(teamList.get(i).getTeamName());
                 System.out.println("- " + teamList.get(i).getUser());
-                for (int j = 0; j < teamList.get(i).getMembersSize(); j++)
+
+                for(int j = 0; j < teamList.get(i).getMembersSize(); j++)
                 {
                     System.out.println("-- " + teamList.get(i).getMembers().get(j));
                 }
@@ -125,7 +124,8 @@ public class Main // 83/100
         }
 
         System.out.println("Teams to disband:");
-        for (int i = 0; i < teamList.size(); i++)
+
+        for(int i = 0; i < teamList.size(); i++)
         {
             if(teamList.get(i).getMembers().isEmpty())
             {

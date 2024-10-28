@@ -57,7 +57,9 @@ public class Student
 
             input = scanner.nextLine();
         }
+
         String city = scanner.nextLine();
+
         for(Student student : students)
         {
             if(student.getCity().equals(city))

@@ -6,7 +6,6 @@ public class Engine
     String power;
     String displacement;
     String efficiency;
-
     public Engine(String model, String power)
     {
         this.model = model;
@@ -14,17 +13,14 @@ public class Engine
         this.displacement = "n/a";
         this.efficiency = "n/a";
     }
-
     public void setDisplacement(String displacement)
     {
         this.displacement = displacement;
     }
-
     public void setEfficiency(String efficiency)
     {
         this.efficiency = efficiency;
     }
-
     public String getModel()
     {
         return model;
@@ -34,12 +30,10 @@ public class Engine
     {
         return power;
     }
-
     public String getDisplacement()
     {
         return displacement;
     }
-
     public String getEfficiency()
     {
         return efficiency;
