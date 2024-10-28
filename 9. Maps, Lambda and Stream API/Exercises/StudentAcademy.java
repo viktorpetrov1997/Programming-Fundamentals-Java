@@ -12,7 +12,7 @@ public class StudentAcademy
 
         int n = Integer.parseInt(scanner.nextLine());
 
-        for (int i = 0; i < n; i++)
+        for(int i = 0; i < n; i++)
         {
             String name = scanner.nextLine();
             double grade = Double.parseDouble(scanner.nextLine());
@@ -20,7 +20,7 @@ public class StudentAcademy
             studentGrades.get(name).add(grade);
         }
 
-        for (Map.Entry<String, List<Double>> entry : studentGrades.entrySet())
+        for(Map.Entry<String, List<Double>> entry : studentGrades.entrySet())
         {
             double gradeAverage = entry.getValue().stream().mapToDouble(Double::doubleValue).average().getAsDouble();
             if(gradeAverage >= 4.50)
@@ -28,6 +28,5 @@ public class StudentAcademy
                 System.out.printf("%s -> %.2f%n",entry.getKey(),gradeAverage);
             }
         }
-
     }
 }

@@ -12,7 +12,7 @@ public class WordSynonyms
 
         LinkedHashMap<String, List<String>> wordsMap = new LinkedHashMap<>();
 
-        for (int i = 0; i < n; i++)
+        for(int i = 0; i < n; i++)
         {
             String word = scanner.nextLine();
             String synonym = scanner.nextLine();
@@ -28,7 +28,7 @@ public class WordSynonyms
             }
         }
 
-        for (Map.Entry<String, List<String>> entry : wordsMap.entrySet())
+        for(Map.Entry<String, List<String>> entry : wordsMap.entrySet())
         {
             System.out.printf("%s - %s%n", entry.getKey(), String.join(", ", entry.getValue()));
         }

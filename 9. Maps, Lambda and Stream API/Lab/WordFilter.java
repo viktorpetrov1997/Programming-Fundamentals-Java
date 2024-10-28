@@ -19,7 +19,6 @@ public class WordFilter
                 .toArray(String[]::new);
 
         System.out.println(String.join(System.lineSeparator(), wordsArr));
-
     }
 }
 

@@ -21,6 +21,7 @@ public class MOBAChallenger
                 String player = playerInfo[0];
                 String position = playerInfo[1];
                 int skill = Integer.parseInt(playerInfo[2]);
+
                 LinkedHashMap<String, Integer> currentPlayerInfo = new LinkedHashMap<>();
                 currentPlayerInfo.put(position, skill);
 
@@ -46,24 +47,24 @@ public class MOBAChallenger
                 if(players.containsKey(player1) && players.containsKey(player2))
                 {
                     boolean hasCommon = false;
-                    for (String s : players.get(player1).keySet())
+                    for(String s : players.get(player1).keySet())
                     {
-                        for (String s1 : players.get(player2).keySet())
+                        for(String s1 : players.get(player2).keySet())
                         {
-                            if (s.equals(s1))
+                            if(s.equals(s1))
                             {
                                 hasCommon = true;
                             }
                         }
                     }
-                    if (hasCommon)
+                    if(hasCommon)
                     {
-                        if (players.get(player1).values().stream().mapToInt(i -> i).sum() >
+                        if(players.get(player1).values().stream().mapToInt(i -> i).sum() >
                                 players.get(player2).values().stream().mapToInt(i -> i).sum())
                         {
                             players.remove(player2);
                         }
-                        else if (players.get(player1).values().stream().mapToInt(i -> i).sum() <
+                        else if(players.get(player1).values().stream().mapToInt(i -> i).sum() <
                                 players.get(player2).values().stream().mapToInt(i -> i).sum())
                         {
                             players.remove(player1);

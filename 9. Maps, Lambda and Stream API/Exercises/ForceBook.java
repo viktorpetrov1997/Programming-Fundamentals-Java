@@ -6,7 +6,7 @@ public class ForceBook
 {
     public static boolean memberExists(LinkedHashMap<String, List<String>> force, String forceUser)
     {
-        for (Map.Entry<String, List<String>> member : force.entrySet())
+        for(Map.Entry<String, List<String>> member : force.entrySet())
         {
             if(member.getValue().contains(forceUser))
             {
@@ -54,7 +54,6 @@ public class ForceBook
                 force.get(forceSide).add(forceUser);
                 System.out.printf("%s joins the %s side!%n",forceUser,forceSide);
             }
-
             input = scanner.nextLine();
         }
 

@@ -51,14 +51,14 @@ public class Judge
 
         System.out.println("Individual standings:");
         LinkedHashMap<String, Integer> individualPoints = new LinkedHashMap<>();
-        for (Map.Entry<String, LinkedHashMap<String, Integer>> contest : judge.entrySet())
+
+        for(Map.Entry<String, LinkedHashMap<String, Integer>> contest : judge.entrySet())
         {
             for (Map.Entry<String, Integer> userPoints : contest.getValue().entrySet())
             {
                 individualPoints.merge(userPoints.getKey(), userPoints.getValue(), Integer::sum);
             }
         }
-
 
         /*LinkedHashMap<String, Integer> individualPoints = new LinkedHashMap<>();
         for (Map.Entry<String, LinkedHashMap<String, Integer>> contest : judge.entrySet())

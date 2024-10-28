@@ -18,6 +18,7 @@ public class CoursesSecondWay
             String student = courseInfo[1];
             coursesWithStudents.putIfAbsent(course,new ArrayList<>());
             coursesWithStudents.get(course).add(student);
+
             input = scanner.nextLine();
         }
 

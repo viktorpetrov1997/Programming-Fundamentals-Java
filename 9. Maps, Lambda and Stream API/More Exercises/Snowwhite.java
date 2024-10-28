@@ -11,7 +11,7 @@ public class Snowwhite
         Scanner scanner = new Scanner(System.in);
         String inputLine = scanner.nextLine();
 
-        while (!inputLine.equals("Once upon a time"))
+        while(!inputLine.equals("Once upon a time"))
         {
             String[] inputArr = inputLine.split(" <:> ");
             String hairColor = inputArr[1];
@@ -22,7 +22,7 @@ public class Snowwhite
 
             dwarfs.putIfAbsent(key, 0);
 
-            if (dwarfs.get(key) < physics)
+            if(dwarfs.get(key) < physics)
             {
                 dwarfs.put(key, physics);
             }
@@ -31,7 +31,7 @@ public class Snowwhite
         }
 
         Map<String, Integer> hatColorsCount = new HashMap<>();
-        for (String key : dwarfs.keySet())
+        for(String key : dwarfs.keySet())
         {
             String hatColor = key.split("\\) ")[0].substring(1);
             hatColorsCount.put(hatColor, hatColorsCount.getOrDefault(hatColor, 0) + 1);

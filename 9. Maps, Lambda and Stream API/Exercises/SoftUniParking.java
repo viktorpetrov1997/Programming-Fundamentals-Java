@@ -13,7 +13,7 @@ public class SoftUniParking
 
         LinkedHashMap<String, String> parkingLotInfo = new LinkedHashMap<>();
 
-        for (int i = 0; i < n; i++)
+        for(int i = 0; i < n; i++)
         {
             String[] parkingInfo = scanner.nextLine().split(" ");
             String command = parkingInfo[0];

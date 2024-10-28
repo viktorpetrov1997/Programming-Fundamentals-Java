@@ -21,6 +21,7 @@ public class Courses
             coursesWithStudents.get(course).add(student);
             coursesCount.putIfAbsent(course,0);
             coursesCount.put(course,coursesCount.get(course) + 1);
+
             input = scanner.nextLine();
         }
 

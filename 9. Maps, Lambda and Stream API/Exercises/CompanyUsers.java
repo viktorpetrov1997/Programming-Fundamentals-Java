@@ -17,6 +17,7 @@ public class CompanyUsers
             String company = companyInfo[0];
             String employeeId = companyInfo[1];
             companyEmployees.putIfAbsent(company,new ArrayList<>());
+
             if(!companyEmployees.get(company).contains(employeeId))
             {
                 companyEmployees.get(company).add(employeeId);

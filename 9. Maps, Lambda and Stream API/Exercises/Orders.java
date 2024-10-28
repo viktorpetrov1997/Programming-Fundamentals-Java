@@ -31,12 +31,10 @@ public class Orders
             {
                 productsQuantity.put(product,productsQuantity.get(product) + quantity);
             }
-
-
             input = scanner.nextLine();
         }
 
-        for (Map.Entry<String, Double> entry : productsPrice.entrySet())
+        for(Map.Entry<String, Double> entry : productsPrice.entrySet())
         {
             String product = entry.getKey();
             double price = entry.getValue();

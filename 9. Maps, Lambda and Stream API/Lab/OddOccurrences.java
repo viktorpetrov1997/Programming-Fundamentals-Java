@@ -21,7 +21,7 @@ public class OddOccurrences
 
         List<String> odds = new ArrayList<>();
 
-        for (Map.Entry<String, Integer> entry : wordsMap.entrySet())
+        for(Map.Entry<String, Integer> entry : wordsMap.entrySet())
         {
             if(entry.getValue() % 2 != 0)
             {

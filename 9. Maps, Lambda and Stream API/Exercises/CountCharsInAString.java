@@ -16,7 +16,6 @@ public class CountCharsInAString
         for(char ch : text.toCharArray())
         {
             if(ch == ' ') continue;
-
             charsCount.putIfAbsent(ch,0);
             charsCount.put(ch, charsCount.get(ch) + 1);
         }

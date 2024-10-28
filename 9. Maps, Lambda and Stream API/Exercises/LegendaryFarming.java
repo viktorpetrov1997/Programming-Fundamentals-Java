@@ -18,12 +18,14 @@ public class LegendaryFarming
             int quantity = 0;
             String material = "";
             boolean legendaryItemFound = false;
-            for (int i = 0; i < input.length; i+=2)
+
+            for(int i = 0; i < input.length; i+=2)
             {
                 quantity = Integer.parseInt(input[i]);
                 material = input[i+1].toLowerCase();
                 farm.putIfAbsent(material,0);
                 farm.put(material,farm.get(material) + quantity);
+
                 if((material.equals("shards") || material.equals("fragments") || material.equals("motes"))
                         && farm.get(material) >= 250)
                 {
@@ -34,7 +36,7 @@ public class LegendaryFarming
             if(legendaryItemFound) break;
         }
 
-        for (Map.Entry<String, Integer> entry : farm.entrySet())
+        for(Map.Entry<String, Integer> entry : farm.entrySet())
         {
             if(entry.getKey().equals("shards") && entry.getValue() >= 250)
             {
@@ -57,7 +59,7 @@ public class LegendaryFarming
         System.out.println("fragments: " + (farm.get("fragments") == null ? 0 : farm.get("fragments")));
         System.out.println("motes: " + (farm.get("motes") == null ? 0 : farm.get("motes")));
 
-        for (Map.Entry<String, Integer> entry : farm.entrySet())
+        for(Map.Entry<String, Integer> entry : farm.entrySet())
         {
             if(!entry.getKey().equals("shards") && !entry.getKey().equals("fragments") && !entry.getKey().equals("motes"))
             {

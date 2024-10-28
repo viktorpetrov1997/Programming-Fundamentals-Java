@@ -10,7 +10,6 @@ public class LegendaryFarmingSecondWay
     {
         Scanner scanner = new Scanner(System.in);
 
-
         LinkedHashMap<String, Integer> materials = new LinkedHashMap<>();
 
         materials.put("shards", 0);
@@ -24,7 +23,8 @@ public class LegendaryFarmingSecondWay
         {
             String input = scanner.nextLine();
             String[] inputData = input.split(" ");
-            for (int index = 0; index < inputData.length; index += 2)
+
+            for(int index = 0; index < inputData.length; index += 2)
             {
                 int quantity = Integer.parseInt(inputData[index]);
                 String material = inputData[index + 1].toLowerCase();
@@ -53,7 +53,7 @@ public class LegendaryFarmingSecondWay
                 }
                 else
                 {
-                    if (!junks.containsKey(material))
+                    if(!junks.containsKey(material))
                     {
                         junks.put(material, quantity);
                     }

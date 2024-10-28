@@ -14,7 +14,8 @@ public class DragonArmy
         int N = Integer.parseInt(scanner.nextLine());
 
         LinkedHashMap<String, TreeMap<String,int[]>> dragonArmy = new LinkedHashMap<>();
-        for (int i = 0; i < N; i++)
+
+        for(int i = 0; i < N; i++)
         {
             String[] dragonInfo = scanner.nextLine().split(" ");
             String type = dragonInfo[0];

@@ -12,7 +12,6 @@ public class AMinerTask
         LinkedHashMap<String, Integer> resourcesMap = new LinkedHashMap<>();
 
         String input = scanner.nextLine();
-
         while(!input.equals("stop"))
         {
             String resource = input;
@@ -27,7 +26,6 @@ public class AMinerTask
             }
             input = scanner.nextLine();
         }
-
         resourcesMap.forEach((key, value) -> System.out.println(key + " -> " + value));
     }
 }

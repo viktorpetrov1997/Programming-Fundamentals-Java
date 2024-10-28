@@ -31,6 +31,7 @@ public class Ranking
             String password = commandArray[1];
             String username = commandArray[2];
             int points = Integer.parseInt(commandArray[3]);
+
             LinkedHashMap<String, Integer> currentContestPoints = new LinkedHashMap<>();
             currentContestPoints.put(contest, points);
 
@@ -54,6 +55,7 @@ public class Ranking
 
         String userWithMostPoints = "";
         int maxTotalPoints = 0;
+
         for(Map.Entry<String, LinkedHashMap<String, Integer>> entry : contestInfo.entrySet())
         {
             int totalPoints = entry.getValue().values().stream().mapToInt(Integer::intValue).sum();
@@ -63,6 +65,7 @@ public class Ranking
                 userWithMostPoints = entry.getKey();
             }
         }
+
         System.out.printf("Best candidate is %s with total %d points.%n",userWithMostPoints,maxTotalPoints);
         System.out.println("Ranking:");
 

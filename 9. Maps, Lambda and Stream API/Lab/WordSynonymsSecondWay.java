@@ -12,7 +12,7 @@ public class WordSynonymsSecondWay
 
         LinkedHashMap<String, List<String>> wordsMap = new LinkedHashMap<>();
 
-        for (int i = 0; i < n; i++)
+        for(int i = 0; i < n; i++)
         {
             String word = scanner.nextLine();
             String synonym = scanner.nextLine();
