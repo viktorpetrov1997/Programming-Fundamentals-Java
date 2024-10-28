@@ -53,13 +53,14 @@ public class MovingTarget
                 int endIndex = index + radius;
                 int numberOfElements = (radius * 2) + 1;
                 int count = 0;
+
                 if(index < 0 || index > targets.size() - 1 || startIndex < 0 || endIndex > targets.size() - 1)
                 {
                     System.out.println("Strike missed!");
                 }
                 else
                 {
-                    for (int i = startIndex; i <= endIndex ; i++)
+                    for(int i = startIndex; i <= endIndex ; i++)
                     {
                         targets.remove(i);
                         ++count;
@@ -70,7 +71,8 @@ public class MovingTarget
             }
             input = scanner.nextLine();
         }
-        for (int i = 0; i < targets.size(); i++)
+
+        for(int i = 0; i < targets.size(); i++)
         {
             if(i < targets.size() - 1)
             {

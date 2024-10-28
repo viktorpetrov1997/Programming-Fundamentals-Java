@@ -11,6 +11,7 @@ public class ComputerStore
 
         double priceWithoutTaxes = 0;
         double taxes = 0;
+
         String input = scanner.nextLine();
         while(!input.equals("special") && !input.equals("regular"))
         {
@@ -26,11 +27,14 @@ public class ComputerStore
             }
             input = scanner.nextLine();
         }
+
         double totalPrice = priceWithoutTaxes + taxes;
+
         if(input.equals("special"))
         {
             totalPrice *= 0.9;
         }
+
         if(totalPrice > 0)
         {
             System.out.println("Congratulations you've just bought a new computer!");

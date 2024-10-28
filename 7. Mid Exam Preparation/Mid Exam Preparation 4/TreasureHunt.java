@@ -14,14 +14,13 @@ public class TreasureHunt
         List<String> treasureChest = Arrays.stream(scanner.nextLine().split("\\|")).collect(Collectors.toList());
 
         String input = scanner.nextLine();
-
         while(!input.equals("Yohoho!"))
         {
             String[] commandArray = input.split(" ");
             String command = commandArray[0];
             if(command.equals("Loot"))
             {
-                for (int i = 1; i < commandArray.length; i++)
+                for(int i = 1; i < commandArray.length; i++)
                 {
                     if(!treasureChest.contains(commandArray[i]))
                     {
@@ -42,8 +41,7 @@ public class TreasureHunt
             else if(command.equals("Steal"))
             {
                 int count = Integer.parseInt(commandArray[1]);
-
-                if (count > treasureChest.size())
+                if(count > treasureChest.size())
                 {
                     count = treasureChest.size();
                 }
@@ -56,10 +54,11 @@ public class TreasureHunt
             }
             input = scanner.nextLine();
         }
+
         if(!treasureChest.isEmpty())
         {
             int sum = 0;
-            for (int i = 0; i < treasureChest.size(); i++)
+            for(int i = 0; i < treasureChest.size(); i++)
             {
                 sum += treasureChest.get(i).length();
             }

@@ -13,7 +13,7 @@ public class BlackFlag
         double expectedPlunder = Double.parseDouble(scanner.nextLine());
         double totalPlunder = 0;
 
-        for (int i = 1; i <= days; i++)
+        for(int i = 1; i <= days; i++)
         {
             totalPlunder += dailyPlunder;
             if(i % 3 == 0)
@@ -26,6 +26,7 @@ public class BlackFlag
                 totalPlunder *= 0.7;
             }
         }
+
         if(totalPlunder >= expectedPlunder)
         {
             System.out.printf("Ahoy! %.2f plunder gained.",totalPlunder);

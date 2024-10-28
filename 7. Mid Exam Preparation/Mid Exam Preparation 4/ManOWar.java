@@ -49,7 +49,7 @@ public class ManOWar
 
                 if((startIndex >= 0 && startIndex < pirateShip.size()) && (endIndex >= 0 && endIndex < pirateShip.size()))
                 {
-                    for (int i = startIndex; i <= endIndex; i++)
+                    for(int i = startIndex; i <= endIndex; i++)
                     {
                         pirateShip.set(i,pirateShip.get(i) - damage);
                         if(pirateShip.get(i) <= 0)
@@ -107,6 +107,7 @@ public class ManOWar
             {
                 warShipSum += warShip.get(i);
             }
+
             System.out.printf("Pirate ship status: %d%n",pirateShipSum);
             System.out.printf("Warship status: %d",warShipSum);
         }

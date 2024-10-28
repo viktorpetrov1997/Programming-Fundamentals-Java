@@ -14,6 +14,7 @@ public class MemoryGame
         List<String> numbers = Arrays.stream(scanner.nextLine().split(" ")).collect(Collectors.toList());
 
         int numberOfMoves = 0;
+
         String input = scanner.nextLine();
         while(!input.equals("end"))
         {
@@ -50,9 +51,9 @@ public class MemoryGame
                     System.out.println("Try again!");
                 }
             }
-
             input = scanner.nextLine();
         }
+
         if(!numbers.isEmpty())
         {
             System.out.println("Sorry you lose :(");

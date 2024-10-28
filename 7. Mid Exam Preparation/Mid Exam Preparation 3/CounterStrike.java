@@ -18,7 +18,7 @@ public class CounterStrike
 
             if(initialEnergy < distance)
             {
-                System.out.printf("Not enough energy! Game ends with %d won battles and %d energy",battlesWon,initialEnergy);
+                System.out.printf("Not enough energy! Game ends with %d won battles and %d energy", battlesWon, initialEnergy);
                 break;
             }
             else
@@ -32,6 +32,7 @@ public class CounterStrike
             }
             input = scanner.nextLine();
         }
+
         if(input.equals("End of battle"))
         {
             System.out.printf("Won battles: %d. Energy left: %d", battlesWon, initialEnergy);

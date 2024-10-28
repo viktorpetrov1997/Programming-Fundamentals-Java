@@ -19,6 +19,7 @@ public class GuineaPig
         double pigWeightInGrams = pigWeightInKg * 1000;
 
         boolean isNotEnough = false;
+
         for(int day=1;day<=30;day++)
         {
             foodQuantityInGrams -= 300;

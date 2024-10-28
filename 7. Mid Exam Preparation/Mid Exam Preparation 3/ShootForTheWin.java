@@ -15,6 +15,7 @@ public class ShootForTheWin
                         .map(Integer::parseInt).collect(Collectors.toList());
 
         int shotTargets = 0;
+
         String input = scanner.nextLine();
         while(!input.equals("End"))
         {
@@ -23,9 +24,9 @@ public class ShootForTheWin
             {
                 if(targets.get(index) != -1)
                 {
-                    for (int i = 0; i < targets.size(); i++)
+                    for(int i = 0; i < targets.size(); i++)
                     {
-                        if (i != index && targets.get(i) != -1)
+                        if(i != index && targets.get(i) != -1)
                         {
                             if(targets.get(i) > targets.get(index))
                             {
@@ -43,7 +44,9 @@ public class ShootForTheWin
             }
             input = scanner.nextLine();
         }
+
         System.out.printf("Shot targets: %d -> ",shotTargets);
+
         for(int target: targets)
         {
             System.out.print(target + " ");
