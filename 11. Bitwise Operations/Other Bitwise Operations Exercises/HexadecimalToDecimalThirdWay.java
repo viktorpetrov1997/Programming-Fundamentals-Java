@@ -12,6 +12,7 @@ public class HexadecimalToDecimalThirdWay
         hex = hex.replace("0x","");
 
         int decimal = 0;
+
         for (int i = 0; i < hex.length(); i++)
         {
             char c = hex.charAt(i);
@@ -30,6 +31,7 @@ public class HexadecimalToDecimalThirdWay
             }
             decimal = decimal * 16 + digit;
         }
+
         System.out.println(decimal);
     }
 }

@@ -9,6 +9,7 @@ public class BinaryToDecimal
         Scanner scanner = new Scanner(System.in);
 
         String binaryNumber = scanner.nextLine();
+
         int power = binaryNumber.length() - 1;
         int decimal = 0;
 

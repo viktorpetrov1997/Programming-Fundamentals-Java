@@ -9,6 +9,7 @@ public class DecimalToHexadecimalSecondWay
         Scanner scanner = new Scanner(System.in);
 
         int decimal = Integer.parseInt(scanner.nextLine());
+
         StringBuilder hex = new StringBuilder();
 
         while (decimal > 0)
@@ -18,6 +19,7 @@ public class DecimalToHexadecimalSecondWay
             hex.insert(0, hexDigit);
             decimal /= 16;
         }
+
         System.out.println(hex.toString());
     }
 }

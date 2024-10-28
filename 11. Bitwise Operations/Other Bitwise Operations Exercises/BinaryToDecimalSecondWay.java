@@ -12,7 +12,6 @@ public class BinaryToDecimalSecondWay
 
         int decimalNumber = 0;
         int power = 0;
-
         long remainder;
 
         while(number != 0)

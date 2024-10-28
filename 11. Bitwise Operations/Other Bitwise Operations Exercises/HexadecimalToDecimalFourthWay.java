@@ -12,7 +12,6 @@ public class HexadecimalToDecimalFourthWay
         hex = hex.replace("0x","");
 
         int power = hex.length() - 1;
-
         int decimal = 0;
 
         for (int i = 0; i < hex.length(); i++)
@@ -22,6 +21,7 @@ public class HexadecimalToDecimalFourthWay
             decimal += digit * Math.pow(16,power);
             --power;
         }
+
         System.out.println(decimal);
     }
 }

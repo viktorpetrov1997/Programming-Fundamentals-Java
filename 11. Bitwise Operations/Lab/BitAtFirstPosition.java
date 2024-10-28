@@ -11,6 +11,7 @@ public class BitAtFirstPosition
         int n = Integer.parseInt(scanner.nextLine());
 
         StringBuilder binary = new StringBuilder();
+
         while(n > 0)
         {
             int digit = n % 2;

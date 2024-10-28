@@ -11,6 +11,7 @@ public class BinaryToDecimalThirdWay
         String binary = scanner.nextLine();
 
         int decimal = Integer.parseInt(binary,2);
+
         System.out.println(decimal);
     }
 }
