@@ -19,10 +19,10 @@ public class PostOffice
         String firstPartRegex = "([#$%*&])([A-Z]+)\\1";
 
         Pattern firstPartPattern = Pattern.compile(firstPartRegex);
-
         Matcher firstPartMatcher = firstPartPattern.matcher(firstPart);
 
         String capitalLetters = "";
+
         if(firstPartMatcher.find())
         {
             String current = firstPartMatcher.group();
@@ -31,7 +31,7 @@ public class PostOffice
 
         LinkedHashMap<Character, Integer> lettersLength = new LinkedHashMap<>();
 
-        for (int i = 0; i < capitalLetters.length(); i++)
+        for(int i = 0; i < capitalLetters.length(); i++)
         {
             String secondPartRegex = "([0-9]{2}):([0-9]{2})";
             Pattern secondPartPattern = Pattern.compile(secondPartRegex);
@@ -53,7 +53,8 @@ public class PostOffice
         }
 
         String[] thirdPartWords = thirdPart.split(" ");
-        for (int i = 0; i < capitalLetters.length(); i++)
+
+        for(int i = 0; i < capitalLetters.length(); i++)
         {
             char firstLetter = capitalLetters.charAt(i);
             int length = lettersLength.get(firstLetter);

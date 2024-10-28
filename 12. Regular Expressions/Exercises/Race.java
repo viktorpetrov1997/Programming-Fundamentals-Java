@@ -30,7 +30,6 @@ public class Race
         String input = scanner.nextLine();
         while(!input.equals("end of race"))
         {
-
             StringBuilder name = new StringBuilder();
             Matcher matcherName = patternLetters.matcher(input);
 
@@ -46,7 +45,6 @@ public class Race
             {
                 distance += Integer.parseInt(matcherDigits.group());
             }
-
 
             String racerName = name.toString();
             if(racersDistances.containsKey(racerName))

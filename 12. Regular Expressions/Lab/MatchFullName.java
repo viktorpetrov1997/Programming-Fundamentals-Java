@@ -16,7 +16,7 @@ public class MatchFullName
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(text);
 
-        while (matcher.find())
+        while(matcher.find())
         {
             System.out.print(matcher.group() + " ");
         }

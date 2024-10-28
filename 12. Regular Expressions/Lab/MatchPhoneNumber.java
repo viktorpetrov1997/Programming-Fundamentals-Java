@@ -19,7 +19,8 @@ public class MatchPhoneNumber
         Matcher matcher = pattern.matcher(text);
 
         List<String> phoneNumbersList = new ArrayList<>();
-        while (matcher.find())
+
+        while(matcher.find())
         {
             phoneNumbersList.add(matcher.group());
         }

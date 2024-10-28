@@ -24,6 +24,7 @@ public class WinningTicket
                 String right = currentTicket.substring(10,20);
                 String leftMatch = "a";
                 String rightMatch = "s";
+
                 Matcher leftMatcher = pattern.matcher(left);
                 Matcher rightMatcher = pattern.matcher(right);
 

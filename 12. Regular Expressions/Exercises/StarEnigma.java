@@ -16,8 +16,8 @@ public class StarEnigma
         int n = Integer.parseInt(scanner.nextLine());
 
         List<StringBuilder> decryptedMessageList = new ArrayList<>();
-
         int countLetters = 0;
+
         for(int i = 0; i < n; i++)
         {
             String text = scanner.nextLine();
@@ -30,12 +30,15 @@ public class StarEnigma
                     ++countLetters;
                 }
             }
+
             StringBuilder decryptedMessage = new StringBuilder();
+
             for(int j = 0; j < text.length(); j++)
             {
                 char newChar = (char) (text.charAt(j) - countLetters);
                 decryptedMessage.append(newChar);
             }
+
             decryptedMessageList.add(decryptedMessage);
             countLetters = 0;
         }
@@ -50,7 +53,6 @@ public class StarEnigma
         for(int i = 0; i < decryptedMessageList.size(); i++)
         {
             Matcher matcher = pattern.matcher(decryptedMessageList.get(i));
-
             if(matcher.find())
             {
                 String planetName = matcher.group("planetName");

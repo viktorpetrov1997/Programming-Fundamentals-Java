@@ -12,11 +12,9 @@ public class NetherRealms
 
         String[] demons = scanner.nextLine().split(", *");
 
-
         String healthRegex = "[^\\-0-9\\+\\*\\/\\.]*";
         String baseDamageRegex = "[\\-\\+]?([0-9]+)[.]?[0-9]*";
         String symbolsForBaseDamage = "[\\/\\*]";
-
 
         for(int i = 0; i < demons.length; i++)
         {
@@ -26,6 +24,7 @@ public class NetherRealms
 
             StringBuilder healthString = new StringBuilder();
             int health = 0;
+
             while(matcher.find())
             {
                 healthString.append(matcher.group());
@@ -39,6 +38,7 @@ public class NetherRealms
             pattern = Pattern.compile(baseDamageRegex);
             matcher = pattern.matcher(currentDemon);
             double damage = 0.0;
+
             while(matcher.find())
             {
                 String group = matcher.group();

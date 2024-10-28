@@ -23,7 +23,6 @@ public class Furniture
         while(!input.equals("Purchase"))
         {
             Matcher matcher = pattern.matcher(input);
-
             if(matcher.find())
             {
                 String furnitureName = matcher.group("furnitureName");
@@ -33,7 +32,6 @@ public class Furniture
                 furniture.add(furnitureName);
                 totalMoneySpend += price * quantity;
             }
-
             input = scanner.nextLine();
         }
 

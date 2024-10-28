@@ -16,7 +16,7 @@ public class MatchDates
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(text);
 
-        while (matcher.find())
+        while(matcher.find())
         {
             System.out.printf("Day: %s, Month: %s, Year: %s%n",
                               matcher.group("day"),

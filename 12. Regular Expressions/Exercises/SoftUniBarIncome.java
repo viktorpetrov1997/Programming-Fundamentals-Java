@@ -20,7 +20,6 @@ public class SoftUniBarIncome
         while(!input.equals("end of shift"))
         {
             Matcher matcher = pattern.matcher(input);
-
             if(matcher.find())
             {
                 int quantity = Integer.parseInt(matcher.group("count"));

@@ -14,6 +14,7 @@ public class RageQuit
         Matcher matcher = Pattern.compile("(?<string>\\D*)(?<count>\\d+)").matcher(input);
 
         StringBuilder newString = new StringBuilder();
+
         while(matcher.find())
         {
             String str = matcher.group("string").toUpperCase();
