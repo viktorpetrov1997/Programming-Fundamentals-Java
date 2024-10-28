@@ -18,7 +18,6 @@ public class BombNumbers
         int bombNumber = Integer.parseInt(input[0]);
         int power = Integer.parseInt(input[1]);
 
-
         while(numbers.contains(bombNumber))
         {
             int elementIndex = numbers.indexOf(bombNumber);
@@ -27,14 +26,14 @@ public class BombNumbers
 
             int right = Math.min(elementIndex + power,numbers.size() - 1);
 
-            for (int i = right; i >= left ; i--)
+            for(int i = right; i >= left ; i--)
             {
                 numbers.remove(i);
             }
         }
 
         int sum = 0;
-        for (int i = 0; i < numbers.size(); i++)
+        for(int i = 0; i < numbers.size(); i++)
         {
             sum += numbers.get(i);
         }

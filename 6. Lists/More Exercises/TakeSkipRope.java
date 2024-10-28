@@ -17,14 +17,15 @@ public class TakeSkipRope
         List<Integer> digits = new ArrayList<>();
 
         String numbers = "0123456789";
-        for (int i = 0; i < string.size(); i++)
+
+        for(int i = 0; i < string.size(); i++)
         {
             if(numbers.contains(string.get(i)))
             {
                 digits.add(Integer.valueOf(string.get(i)));
             }
         }
-        for (int i = 0; i < string.size(); i++)
+        for(int i = 0; i < string.size(); i++)
         {
             if(numbers.contains(string.get(i)))
             {
@@ -33,14 +34,14 @@ public class TakeSkipRope
             }
         }
 
-
         int startIndex = 0;
         String text = "";
-        for (int i = 0; i < digits.size(); i++)
+
+        for(int i = 0; i < digits.size(); i++)
         {
             if(i % 2 == 0)
             {
-                for (int j = startIndex; j < digits.get(i) + startIndex; j++)
+                for(int j = startIndex; j < digits.get(i) + startIndex; j++)
                 {
                     if(j >= string.size()) break;
                     text += string.get(j);

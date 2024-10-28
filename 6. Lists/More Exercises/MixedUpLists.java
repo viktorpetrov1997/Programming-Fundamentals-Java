@@ -17,6 +17,7 @@ public class MixedUpLists
                         .map(Integer::parseInt).collect(Collectors.toList());
 
         int smallerList = 0;
+
         if(firstNumbers.size() > secondNumbers.size())
         {
             smallerList = secondNumbers.size();
@@ -30,7 +31,7 @@ public class MixedUpLists
 
         List<Integer> mixedUpList = new ArrayList<>();
 
-        for (int i = 0; i < smallerList; i++)
+        for(int i = 0; i < smallerList; i++)
         {
             mixedUpList.add(firstNumbers.get(i));
             mixedUpList.add(secondNumbers.get(i));
@@ -50,7 +51,7 @@ public class MixedUpLists
         }
 
         List<Integer> numbersInRange = new ArrayList<>();
-        for (int i = 0; i < mixedUpList.size(); i++)
+        for(int i = 0; i < mixedUpList.size(); i++)
         {
             if(mixedUpList.get(i) > start && mixedUpList.get(i) < end)
             {
@@ -60,7 +61,7 @@ public class MixedUpLists
 
         Collections.sort(numbersInRange);
 
-        for (int i = 0; i < numbersInRange.size(); i++)
+        for(int i = 0; i < numbersInRange.size(); i++)
         {
             System.out.print(numbersInRange.get(i) + " ");
         }

@@ -9,7 +9,7 @@ public class SoftUniCoursePlanning
 {
     private static boolean doesContainTitle(List<String> courses, String lessonTitle)
     {
-        for (int i = 0; i < courses.size(); i++)
+        for(int i = 0; i < courses.size(); i++)
         {
             if(courses.get(i).contains(lessonTitle))
             {
@@ -42,6 +42,7 @@ public class SoftUniCoursePlanning
             {
                 boolean doesExist = doesContainTitle(courses,commandArray[1]);
                 int index = Integer.parseInt(commandArray[2]);
+
                 if(!doesExist)
                 {
                     courses.add(index,commandArray[1]);
@@ -63,9 +64,10 @@ public class SoftUniCoursePlanning
                 int indexOfSecondLesson = courses.indexOf(commandArray[2]);
                 boolean firstLessonContainsExercise = false;
                 boolean secondLessonContainsExercise = false;
+
                 if(doesExistFirst && doesExistSecond)
                 {
-                    for (int i = 0; i < courses.size(); i++)
+                    for(int i = 0; i < courses.size(); i++)
                     {
                         if(courses.get(i).equals(commandArray[1] + "-Exercise"))
                         {
@@ -74,7 +76,7 @@ public class SoftUniCoursePlanning
                         }
                     }
 
-                    for (int i = 0; i < courses.size(); i++)
+                    for(int i = 0; i < courses.size(); i++)
                     {
                         if(courses.get(i).equals(commandArray[2] + "-Exercise"))
                         {
@@ -110,7 +112,8 @@ public class SoftUniCoursePlanning
             {
                 boolean doesExist = doesContainTitle(courses,commandArray[1]);
                 boolean containsExercise = false;
-                for (int i = 0; i < courses.size(); i++)
+
+                for(int i = 0; i < courses.size(); i++)
                 {
                     if(courses.get(i).equals(commandArray[1] + "-Exercise"))
                     {
@@ -118,6 +121,7 @@ public class SoftUniCoursePlanning
                         break;
                     }
                 }
+
                 if(doesExist && !containsExercise)
                 {
                     int indexOfLesson = courses.indexOf(commandArray[1]);

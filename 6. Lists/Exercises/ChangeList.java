@@ -23,7 +23,7 @@ public class ChangeList
             if(command.equals("Delete"))
             {
                 int element = Integer.parseInt(commandArray[1]);
-                for (int i = 0; i < numbers.size(); i++)
+                for(int i = 0; i < numbers.size(); i++)
                 {
                     if(numbers.get(i) == element)
                     {
@@ -39,7 +39,8 @@ public class ChangeList
             }
             input = scanner.nextLine();
         }
-        for (int i = 0; i < numbers.size(); i++)
+
+        for(int i = 0; i < numbers.size(); i++)
         {
             System.out.print(numbers.get(i) + " ");
         }

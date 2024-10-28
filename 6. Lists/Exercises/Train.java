@@ -28,7 +28,7 @@ public class Train
             }
             else
             {
-                for (int i = 0; i < numbers.size(); i++)
+                for(int i = 0; i < numbers.size(); i++)
                 {
                     if(numbers.get(i) + Integer.parseInt(commandArray[0]) <= maxCapacity)
                     {
@@ -39,7 +39,7 @@ public class Train
             }
             input = scanner.nextLine();
         }
-        for (int i = 0; i <numbers.size() ; i++)
+        for(int i = 0; i <numbers.size() ; i++)
         {
             System.out.print(numbers.get(i) + " ");
         }

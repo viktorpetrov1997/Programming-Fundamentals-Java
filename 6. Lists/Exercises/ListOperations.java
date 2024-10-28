@@ -55,7 +55,7 @@ public class ListOperations
                 int count = Integer.parseInt(commandArray[2]);
                 if(direction.equals("left"))
                 {
-                    for (int i = 0; i < count; i++)
+                    for(int i = 0; i < count; i++)
                     {
                         numbers.add(numbers.get(0));
                         numbers.remove(numbers.get(0));
@@ -63,7 +63,7 @@ public class ListOperations
                 }
                 else if(direction.equals("right"))
                 {
-                    for (int i = 0; i < count; i++)
+                    for(int i = 0; i < count; i++)
                     {
                         numbers.add(0,numbers.get(numbers.size() - 1));
                         numbers.remove(numbers.size() - 1);
@@ -72,7 +72,8 @@ public class ListOperations
             }
             input = scanner.nextLine();
         }
-        for (int i = 0; i < numbers.size(); i++)
+
+        for(int i = 0; i < numbers.size(); i++)
         {
             System.out.print(numbers.get(i) + " ");
         }

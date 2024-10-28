@@ -11,6 +11,7 @@ public class AnonymousThreat
     {
         return index >= 0 && index <= size - 1;
     }
+
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
@@ -46,12 +47,12 @@ public class AnonymousThreat
                 if(isStartIndexValid && isEndIndexValid)
                 {
                     StringBuilder str = new StringBuilder();
-                    for (int i = startIndex; i <= endIndex; i++)
+                    for(int i = startIndex; i <= endIndex; i++)
                     {
                         str.append(strings.get(i));
                     }
 
-                    for (int i = startIndex; i <= endIndex; i++)
+                    for(int i = startIndex; i <= endIndex; i++)
                     {
                         strings.remove(startIndex);
                     }
@@ -67,7 +68,7 @@ public class AnonymousThreat
                 strings.remove(index);
 
                 int begin = 0;
-                for (int i = 1; i < partitions; i++)
+                for(int i = 1; i < partitions; i++)
                 {
                     strings.add(index,elementForDivide.substring(begin, begin + partSize));
                     index++;

@@ -14,15 +14,16 @@ public class HouseParty
 
         int numberOfCommands = Integer.parseInt(scanner.nextLine());
 
-        for (int i = 0; i < numberOfCommands; i++)
+        for(int i = 0; i < numberOfCommands; i++)
         {
             String input = scanner.nextLine();
             String[] commandArray = input.split(" ");
             String name = commandArray[0];
+
             if(commandArray[2].equals("going!"))
             {
                 boolean isAlreadyInList = false;
-                for (int j = 0; j < names.size(); j++)
+                for(int j = 0; j < names.size(); j++)
                 {
                     if(names.get(j).equals(name))
                     {
@@ -39,7 +40,7 @@ public class HouseParty
             else
             {
                 boolean isInList = false;
-                for (int j = 0; j < names.size(); j++)
+                for(int j = 0; j < names.size(); j++)
                 {
                     if(names.get(j).equals(name))
                     {
@@ -57,7 +58,8 @@ public class HouseParty
                 }
             }
         }
-        for (int i = 0; i < names.size(); i++)
+
+        for(int i = 0; i < names.size(); i++)
         {
             System.out.println(names.get(i));
         }

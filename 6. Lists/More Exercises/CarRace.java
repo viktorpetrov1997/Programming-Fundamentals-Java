@@ -16,6 +16,7 @@ public class CarRace
 
         int middleIndex = numbers.size() / 2;
         double firstRacerTime = 0;
+
         for (int i = 0; i < middleIndex; i++)
         {
             firstRacerTime += numbers.get(i);
@@ -26,7 +27,7 @@ public class CarRace
         }
 
         double secondRacerTime = 0;
-        for (int i = numbers.size() - 1; i >= middleIndex + 1; i--)
+        for(int i = numbers.size() - 1; i >= middleIndex + 1; i--)
         {
             secondRacerTime += numbers.get(i);
             if(numbers.get(i) == 0)

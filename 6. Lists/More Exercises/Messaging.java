@@ -19,7 +19,8 @@ public class Messaging
         List<String> string = Arrays.stream(scanner.nextLine().split("")).collect(Collectors.toList());
 
         String text = "";
-        for (int i = 0; i < numbers.size(); i++)
+
+        for(int i = 0; i < numbers.size(); i++)
         {
             int number = numbers.get(i);
             int index = 0;
@@ -33,7 +34,7 @@ public class Messaging
             if(index > string.size() - 1)
             {
                 int countIndex = 0;
-                for (int j = 0; j < index; j++)
+                for(int j = 0; j < index; j++)
                 {
                     ++countIndex;
                     if(countIndex == string.size())

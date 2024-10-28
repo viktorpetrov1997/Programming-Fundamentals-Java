@@ -17,6 +17,7 @@ public class GaussTrick
 
         int sizeList = numbersList.size(); //tuk trqbva da postavim tova v otdelna promenliva zashtoto inache v cikyla numberList.size() neprekusnato shte namalqva
         //zashtoto v cikyla premahvame element ot lista. Za da ne namalqvame slagame fiksiraniq razmer na lista v otdelna promenliva
+
         for(int i=0;i<sizeList / 2;i++)
         {
             int firstNum = numbersList.get(i);

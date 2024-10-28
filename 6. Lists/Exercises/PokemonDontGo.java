@@ -9,7 +9,7 @@ public class PokemonDontGo
 {
     private static void changeElements(List<Integer> numbers, int element)
     {
-        for (int i = 0; i < numbers.size(); i++)
+        for(int i = 0; i < numbers.size(); i++)
         {
             if(numbers.get(i) <= element)
             {
@@ -30,6 +30,7 @@ public class PokemonDontGo
                         .map(Integer::parseInt).collect(Collectors.toList());
 
         int sumOfRemovedElements = 0;
+
         while(numbers.size() > 0)
         {
             int index = Integer.parseInt(scanner.nextLine());

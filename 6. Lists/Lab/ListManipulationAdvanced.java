@@ -23,6 +23,7 @@ public class ListManipulationAdvanced
             {
                 command = commandArr[1];
             }
+
             if(command.equals("Contains"))
             {
                 if(numbersList.contains(Integer.parseInt(commandArr[1])))
@@ -83,6 +84,7 @@ public class ListManipulationAdvanced
             {
                 String condition = commandArr[1];
                 int number = Integer.parseInt(commandArr[2]);
+
                 for(int i=0;i<numbersList.size();i++)
                 {
                     int currentValue = numbersList.get(i);

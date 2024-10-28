@@ -22,11 +22,13 @@ public class DrumSet
         while(!input.equals("Hit it again, Gabsy!"))
         {
             int hitPower = Integer.parseInt(input);
+
             /*for (int i = 0; i < drumSet.size(); i++)
             {
                 drumSet.set(i, drumSet.get(i) - hitPower);
             } vtori nachin da namalim stoinostite na barabanite (v otdelen cikyl a ne samo v edin)*/
-            for (int i = 0; i < drumSet.size(); i++)
+
+            for(int i = 0; i < drumSet.size(); i++)
             {
                 drumSet.set(i, drumSet.get(i) - hitPower);
                 if(drumSet.get(i) <= 0)
