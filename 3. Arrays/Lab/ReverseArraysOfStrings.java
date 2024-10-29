@@ -10,7 +10,7 @@ public class ReverseArraysOfStrings
 
         String[] inputArr = scanner.nextLine().split(" ");
 
-        for (int i = 0; i < inputArr.length / 2; i++)
+        for(int i = 0; i < inputArr.length / 2; i++)
         {
             String oldElement = inputArr[i];
 

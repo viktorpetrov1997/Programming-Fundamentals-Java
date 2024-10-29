@@ -20,9 +20,9 @@ public class EvenAndOddSubtraction
         int evenSum = 0;
         int oddSum = 0;
 
-        for (int num : numArr)
+        for(int num : numArr)
         {
-            if (num % 2 == 0)
+            if(num % 2 == 0)
             {
                 evenSum += num;
             }

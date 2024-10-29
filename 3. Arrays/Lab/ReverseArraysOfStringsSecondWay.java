@@ -10,7 +10,7 @@ public class ReverseArraysOfStringsSecondWay
 
         String[] inputArr = scanner.nextLine().split(" ");
 
-        for(int i=inputArr.length -1;i>=0;i--)
+        for(int i = inputArr.length -1; i >= 0; i--)
         {
             System.out.printf(inputArr[i] + " ");
         }
