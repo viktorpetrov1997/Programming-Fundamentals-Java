@@ -12,9 +12,9 @@ public class MagicSum
         int [] array = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
         int n = Integer.parseInt(scanner.nextLine());
 
-        for(int i=0;i<array.length;i++)
+        for(int i = 0; i < array.length; i++)
         {
-            for(int j=i+1;j<array.length;j++)
+            for(int j = i + 1; j < array.length; j++)
             {
                 if(array[i] + array[j] == n)
                 {

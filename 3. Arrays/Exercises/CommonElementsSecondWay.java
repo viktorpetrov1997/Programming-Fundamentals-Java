@@ -11,9 +11,9 @@ public class CommonElementsSecondWay
         String[] firstArr = scanner.nextLine().split(" ");
         String[] secondArr = scanner.nextLine().split(" ");
 
-        for(int j=0;j<secondArr.length;j++)
+        for(int j = 0; j < secondArr.length; j++)
         {
-            for(int i=0;i<firstArr.length;i++)
+            for(int i = 0; i < firstArr.length; i++)
             {
                 if(secondArr[j].equals(firstArr[i]))
                 {

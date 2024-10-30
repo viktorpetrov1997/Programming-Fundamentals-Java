@@ -19,17 +19,15 @@ public class EqualSum
             int leftSum = 0;
             int rightSum = 0;
 
-
             for(int leftIndex = 0; leftIndex < index; leftIndex++)
             {
                 leftSum += numbers[leftIndex];
             }
 
-            for(int rightIndex = index + 1; rightIndex <=  numbers.length - 1; rightIndex++)
+            for(int rightIndex = index + 1; rightIndex <= numbers.length - 1; rightIndex++)
             {
                 rightSum += numbers[rightIndex];
             }
-
 
             if(leftSum == rightSum)
             {
@@ -37,9 +35,7 @@ public class EqualSum
                 isFound = true;
                 break;
             }
-
         }
-
         if(!isFound)
         {
             System.out.println("no");

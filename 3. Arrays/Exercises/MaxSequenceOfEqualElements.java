@@ -15,7 +15,7 @@ public class MaxSequenceOfEqualElements
         int startIndex = 0;
         int bestStart = 0;
 
-        for (int i = 1; i < array.length; i++)
+        for(int i = 1; i < array.length; i++)
         {
             if(array[i] == array[i - 1])
             {
@@ -34,7 +34,7 @@ public class MaxSequenceOfEqualElements
             }
         }
 
-        for (int i = bestStart; i < bestStart + maxLength; i++)
+        for(int i = bestStart; i < bestStart + maxLength; i++)
         {
             System.out.print(array[i] + " ");
         }

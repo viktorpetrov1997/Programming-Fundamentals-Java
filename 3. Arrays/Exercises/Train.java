@@ -11,7 +11,7 @@ public class Train
         int countWagons = Integer.parseInt(scanner.nextLine());
         int[] wagons = new int[countWagons];
 
-        for(int wagon=0; wagon < countWagons; wagon++)
+        for(int wagon = 0; wagon < countWagons; wagon++)
         {
             int countPeople = Integer.parseInt(scanner.nextLine());
             wagons[wagon] = countPeople;
@@ -19,7 +19,7 @@ public class Train
 
         int sum = 0;
 
-        for(int i=0; i<wagons.length;i++)
+        for(int i = 0; i < wagons.length; i++)
         {
             int currentElement = wagons[i];
             System.out.print(currentElement + " ");

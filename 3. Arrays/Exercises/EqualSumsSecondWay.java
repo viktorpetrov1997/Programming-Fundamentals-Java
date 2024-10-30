@@ -42,7 +42,6 @@ public class EqualSumsSecondWay
                 isEqual = false;
             }
         }
-
         if(isEqual)
         {
             System.out.println(equalityIndex);

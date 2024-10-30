@@ -11,8 +11,7 @@ public class TreasureHuntThirdWay
         String[] treasureChest = scanner.nextLine().split("\\|");
 
         String command = scanner.nextLine();
-
-        while (!command.equals("Yohoho!"))
+        while(!command.equals("Yohoho!"))
         {
             String[] commandParts = command.split(" ");
             switch (commandParts[0])
@@ -47,7 +46,6 @@ public class TreasureHuntThirdWay
                             treasureChest[i] = treasureChest[i + 1];
                         }
                         treasureChest[treasureChest.length - 1] = dropItem;
-
                     }
                     else
                     {
@@ -67,13 +65,13 @@ public class TreasureHuntThirdWay
                                 System.out.print(", ");
                             }
                         }
+
                         String[] tempChest = new String[treasureChest.length - numberOfStealingItems];
                         for(int i = 0; i < tempChest.length; i++)
                         {
                             tempChest[i] = treasureChest[i];
                         }
                         treasureChest = tempChest;
-
                     }
                     else if(numberOfStealingItems >= 0)
                     {

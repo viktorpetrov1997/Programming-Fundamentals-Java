@@ -13,31 +13,32 @@ public class ZigZagArraysSecondWay
         String[] firstArray = new String[n];
         String[] secondArray = new String[n];
 
-        for(int i=1;i<=n;i++)
+        for(int i = 1; i <= n; i++)
         {
             String[] numbers = scanner.nextLine().split(" ");
             String firstNumber = numbers[0];
             String secondNumber = numbers[1];
+
             if(i % 2 != 0)
             {
-                firstArray[i-1] = firstNumber;
-                secondArray[i-1] = secondNumber;
+                firstArray[i - 1] = firstNumber;
+                secondArray[i - 1] = secondNumber;
             }
             else
             {
-                firstArray[i-1] = secondNumber;
-                secondArray[i-1] = firstNumber;
+                firstArray[i - 1] = secondNumber;
+                secondArray[i - 1] = firstNumber;
             }
         }
 
-        for(int i=0;i<firstArray.length;i++)
+        for(int i = 0; i < firstArray.length; i++)
         {
             System.out.printf(firstArray[i] + " ");
         }
 
         System.out.println();
 
-        for(int j=0;j<secondArray.length;j++)
+        for(int j = 0; j < secondArray.length; j++)
         {
             System.out.printf(secondArray[j] + " ");
         }

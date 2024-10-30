@@ -16,14 +16,15 @@ public class TopIntegersSecondWay
 
         boolean isBigger = false;
 
-        for(int i=0;i<numbers.length;i++)
+        for(int i = 0; i < numbers.length; i++)
         {
             if(i == numbers.length - 1)
             {
                 System.out.printf(numbers[i] + " ");
                 break;
             }
-            for(int j=i+1;j<numbers.length;j++)
+
+            for(int j = i + 1; j < numbers.length; j++)
             {
                 if(numbers[i] > numbers[j])
                 {

@@ -28,7 +28,8 @@ public class TopIntegers
                 if(currentNumber > nextNumber)
                 {
                     isTop = true;
-                } else
+                }
+                else
                 {
                     isTop = false;
                     break;

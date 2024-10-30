@@ -12,12 +12,11 @@ public class ArrayRotation
         String[] array = input.split(" ");
         int countRotation = Integer.parseInt(scanner.nextLine());
 
-        for (int rotation = 0; rotation < countRotation; rotation++)
+        for(int rotation = 0; rotation < countRotation; rotation++)
         {
-
             String firstElement = array[0];
 
-            for (int index = 0; index < array.length - 1; index++)
+            for(int index = 0; index < array.length - 1; index++)
             {
                 array[index] = array[index + 1];
             }
@@ -25,7 +24,7 @@ public class ArrayRotation
             array[array.length - 1] = firstElement;
         }
 
-        for (String element : array)
+        for(String element : array)
         {
             System.out.print(element + " ");
         }

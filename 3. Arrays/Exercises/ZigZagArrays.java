@@ -12,7 +12,7 @@ public class ZigZagArrays
         String [] firstArray = new String[n];
         String [] secondArray = new String[n];
 
-        for(int i=0;i<n;i++)
+        for(int i = 0; i < n; i++)
         {
             String input = scanner.nextLine();
             String firstNumber = input.split(" ")[0];

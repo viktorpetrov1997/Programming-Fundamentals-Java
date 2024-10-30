@@ -13,7 +13,7 @@ public class TrainSecondWay
         int sum = 0;
         int numberOfPeople = 0;
 
-        for(int i=0;i<n;i++)
+        for(int i = 0; i < n; i++)
         {
             numberOfPeople = Integer.parseInt(scanner.nextLine());
             System.out.printf(numberOfPeople + " ");

@@ -12,11 +12,10 @@ public class MaxSequenceOfEqualElementsSecondWay
         int[] array = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray();
         int maxLength = 0;
         int length = 1;
-
         int startIndex = 0;
         int bestStart = 0;
 
-        for(int i=0;i<array.length;i++)
+        for(int i = 0; i < array.length; i++)
         {
             if(i != array.length - 1)
             {

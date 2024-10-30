@@ -15,9 +15,9 @@ public class MagicSumSecondWay
 
         int n = Integer.parseInt(scanner.nextLine());
 
-        for(int i=0;i<numbers.length;i++)
+        for(int i = 0; i < numbers.length; i++)
         {
-            for(int j=i+1;j<numbers.length;j++)
+            for(int j = i + 1; j < numbers.length; j++)
             {
                 if(numbers[i] + secondArray[j] == n)
                 {

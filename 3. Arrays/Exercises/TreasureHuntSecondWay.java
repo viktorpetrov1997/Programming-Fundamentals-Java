@@ -11,17 +11,16 @@ public class TreasureHuntSecondWay
         String[] treasureChest = scanner.nextLine().split("\\|");
 
         String input = scanner.nextLine();
-
         while(!input.equals("Yohoho!"))
         {
             String[] commandArr = input.split(" ");
             String command = commandArr[0];
             if(command.equals("Loot"))
             {
-                for(int i=1;i<commandArr.length;i++)
+                for(int i = 1; i < commandArr.length; i++)
                 {
                     boolean containsItem = false;
-                    for(int j=0;j<treasureChest.length;j++)
+                    for(int j = 0; j < treasureChest.length; j++)
                     {
                         if(commandArr[i].equals(treasureChest[j]))
                         {
@@ -33,7 +32,7 @@ public class TreasureHuntSecondWay
                     {
                         String[] newItemsInChest = new String[treasureChest.length + 1];
                         newItemsInChest[0] = commandArr[i];
-                        for(int k=0;k<treasureChest.length;k++)
+                        for(int k = 0; k < treasureChest.length; k++)
                         {
                             newItemsInChest[k+1] = treasureChest[k];
                         }
@@ -47,7 +46,7 @@ public class TreasureHuntSecondWay
                 if(index >= 0 && index < treasureChest.length)
                 {
                     String droppedItem = treasureChest[index];
-                    for (int i = index; i < treasureChest.length - 1; i++)
+                    for(int i = index; i < treasureChest.length - 1; i++)
                     {
                         treasureChest[i] = treasureChest[i + 1];
                     }
@@ -75,7 +74,7 @@ public class TreasureHuntSecondWay
                 if(treasureChest.length > count)
                 {
                     String[] newArray = new String[treasureChest.length - count];
-                    for(int i=0;i<startIndex;i++)
+                    for(int i = 0; i < startIndex; i++)
                     {
                         newArray[i] = treasureChest[i];
                     }
@@ -91,7 +90,7 @@ public class TreasureHuntSecondWay
 
         double sumOfLengths = 0;
 
-        for(int i=0;i<treasureChest.length;i++)
+        for(int i = 0; i < treasureChest.length; i++)
         {
             sumOfLengths += treasureChest[i].length();
         }

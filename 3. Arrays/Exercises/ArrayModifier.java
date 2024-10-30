@@ -12,7 +12,6 @@ public class ArrayModifier
         int[] numbers = Arrays.stream(scanner.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
 
         String command = scanner.nextLine();
-
         while(!command.equals("end"))
         {
             if(command.contains("swap"))
@@ -35,7 +34,7 @@ public class ArrayModifier
             }
             else if(command.contains("decrease"))
             {
-                for(int i=0;i<numbers.length;i++)
+                for(int i = 0; i < numbers.length; i++)
                 {
                     numbers[i] -= 1;
                 }
@@ -43,9 +42,9 @@ public class ArrayModifier
             command = scanner.nextLine();
         }
 
-        for(int i=0;i<numbers.length;i++)
+        for(int i = 0; i < numbers.length; i++)
         {
-            if(i != numbers.length -1 )
+            if(i != numbers.length - 1)
             {
                 System.out.printf(numbers[i] + ", ");
             }
