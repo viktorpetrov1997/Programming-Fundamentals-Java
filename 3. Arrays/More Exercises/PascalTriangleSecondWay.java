@@ -11,11 +11,11 @@ public class PascalTriangleSecondWay
         int n = scanner.nextInt();
         int[][] a = new int[n][n];
 
-        for(int i=0;i<n;i++)
+        for(int i = 0; i < n; i++)
         {
-            for(int j=0;j<=i;j++)
+            for(int j = 0; j <= i; j++)
             {
-                if(j==0 || j==i)
+                if(j == 0 || j == i)
                 {
                     a[i][j]=1;
                 }
@@ -27,16 +27,16 @@ public class PascalTriangleSecondWay
         }
 
         int spaces = n - 1;
-        for(int i=0;i<n;i++)
+        for(int i = 0; i < n; i++)
         {
-            for(int s=0;s<=spaces;s++)
+            for(int s = 0; s <= spaces; s++)
             {
                 System.out.print(" ");
             }
 
             --spaces;
 
-            for(int j=0;j<=i;j++)
+            for(int j = 0; j <= i; j++)
             {
                 System.out.print(a[i][j] + " ");
             }

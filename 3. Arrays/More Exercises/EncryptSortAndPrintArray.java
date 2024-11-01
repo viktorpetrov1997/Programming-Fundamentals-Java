@@ -15,7 +15,7 @@ public class EncryptSortAndPrintArray
         int sum = 0;
         int[] codes = new int[numberOfStrings];
 
-        for (int i = 0; i < numberOfStrings; i++)
+        for(int i = 0; i < numberOfStrings; i++)
         {
             String str = scanner.nextLine();
             for(int j = 0; j < str.length(); j++)
@@ -37,12 +37,12 @@ public class EncryptSortAndPrintArray
 
         Arrays.sort(codes);
 
-        /*for (int i = 0; i < codes.length; i++)
+        /*for(int i = 0; i < codes.length; i++)
         {
-            for (int j = i + 1; j < codes.length; j++)
+            for(int j = i + 1; j < codes.length; j++)
             {
                 int tmp = 0;
-                if (codes[i] > codes[j])
+                if(codes[i] > codes[j])
                 {
                     tmp = codes[i];
                     codes[i] = codes[j];

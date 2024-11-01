@@ -23,7 +23,7 @@ public class LadyBugs
         }
 
         /*
-        for(int i=0;i<indexesOfLadyBugs.length;i++)
+        for(int i = 0; i < indexesOfLadyBugs.length; i++)
         {
             int index = indexesOfLadyBugs[i];
             if(index >= 0 && index < fieldSize)

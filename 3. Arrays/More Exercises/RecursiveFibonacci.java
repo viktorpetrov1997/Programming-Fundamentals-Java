@@ -33,7 +33,7 @@ public class RecursiveFibonacci
 
         /*long n = Integer.parseInt(scanner.nextLine());
 
-        for(int i=1;i<=n;i++)
+        for(int i = 1; i <= n; i++)
         {
             System.out.print(GetFibonacci(i) + " ");
         }*/ //Way of printing fibonacci numbers in one range from start to finish

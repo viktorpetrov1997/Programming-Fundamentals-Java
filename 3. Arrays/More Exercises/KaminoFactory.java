@@ -27,7 +27,7 @@ public class KaminoFactory
             int currentSum = 0;
             int sequenceLength = 1;
             int currentIndex = 0;
-            for(int i=0;i<dna.length;i++)
+            for(int i = 0; i < dna.length; i++)
             {
                 currentSum += dna[i];
 
@@ -50,7 +50,7 @@ public class KaminoFactory
                 maxSum = currentSum;
                 bestSample = sample;
 
-                for(int i=0;i<length;i++)
+                for(int i = 0; i < length; i++)
                 {
                     bestDna[i] = dna[i];
                 }
