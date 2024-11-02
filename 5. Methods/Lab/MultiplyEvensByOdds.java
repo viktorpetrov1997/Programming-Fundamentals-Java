@@ -15,7 +15,6 @@ public class MultiplyEvensByOdds
         }
         return sumOfEvenDigits;
     }
-
     private static int getSumOfOddDigits(int number)
     {
         int sumOfOddDigits = 0;
@@ -27,7 +26,6 @@ public class MultiplyEvensByOdds
         }
         return sumOfOddDigits;
     }
-
     private static int getMultipleOfEvenAndOdds(int number)
     {
         int evenSum = getSumOfEvenDigits(number);

@@ -6,20 +6,19 @@ public class PrintingTriangleSecondWay
 {
     private static void printTriangle(int n)
     {
-        for(int i=1;i<=n;i++)
+        for(int i = 1; i <= n; i++)
         {
             printLine(1,i);
         }
 
-        for(int i=n-1;i>=1;i--)
+        for(int i = n - 1; i >= 1; i--)
         {
             printLine(1,i);
         }
     }
-
     private static void printLine(int start, int end)
     {
-        for(int i=start;i<=end;i++)
+        for(int i = start; i <= end; i++)
         {
             System.out.print(i + " ");
         }

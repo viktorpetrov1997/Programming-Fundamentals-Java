@@ -65,7 +65,5 @@ public class Grades
         double grade = Double.parseDouble(scanner.nextLine());
 
         printGradeInWords(grade);
-
-        //System.out.println(printGradeInWords(grade)); Second way by returning the string from a method
     }
 }

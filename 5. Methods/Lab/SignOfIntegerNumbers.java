@@ -14,7 +14,6 @@ public class SignOfIntegerNumbers
 
         //printSign(Integer.parseInt(scanner.nextLine())); vtori nachin da go izvikam kato direkto vuvejdam chisloto po tozi nachin bez predvaritelno da go deklariram
     }
-
     public static void printSign(int num)
     {
         if(num > 0)

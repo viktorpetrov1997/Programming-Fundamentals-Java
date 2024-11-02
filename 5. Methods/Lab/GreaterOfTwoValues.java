@@ -12,7 +12,6 @@ public class GreaterOfTwoValues
         }
         return secondNumber;
     }
-
     private static char getMax(char firstChar, char secondChar)
     {
         if(firstChar > secondChar)
@@ -21,7 +20,6 @@ public class GreaterOfTwoValues
         }
         return secondChar;
     }
-
     private static String getMax(String firstString, String secondString)
     {
         if(firstString.compareTo(secondString) > 0)

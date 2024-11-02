@@ -8,7 +8,7 @@ public class MathPower
     private static double mathPower(double number, int power)
     {
         /*double result = 1;
-        for(int i=0;i<power;i++)
+        for(int i = 0; i < power; i++)
         {
             result *= number;
         }

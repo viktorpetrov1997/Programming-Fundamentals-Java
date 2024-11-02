@@ -13,7 +13,7 @@ public class MultiplyEvensByOddsSecondWay
 
         int sumOfEvenDigits = 0;
 
-        for(int i=0;i<digits.length;i++)
+        for(int i = 0; i < digits.length; i++)
         {
             if(digits[i] % 2 == 0)
             {
@@ -22,7 +22,6 @@ public class MultiplyEvensByOddsSecondWay
         }
         return sumOfEvenDigits;
     }
-
     private static int getSumOfOddDigits(int number)
     {
         String intToString = Integer.toString(number);
@@ -31,7 +30,7 @@ public class MultiplyEvensByOddsSecondWay
 
         int sumOfOddDigits = 0;
 
-        for(int i=0;i<digits.length;i++)
+        for(int i = 0; i < digits.length; i++)
         {
             if(digits[i] % 2 != 0)
             {
@@ -40,7 +39,6 @@ public class MultiplyEvensByOddsSecondWay
         }
         return sumOfOddDigits;
     }
-
     private static int getMultipleOfEvenAndOdds(int number)
     {
         int evenSum = getSumOfEvenDigits(number);

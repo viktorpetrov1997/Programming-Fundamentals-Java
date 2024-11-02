@@ -7,7 +7,7 @@ public class RepeatString
     private static String repeatString(String str, int numberOfTimes)
     {
         String newString = "";
-        for(int i=0;i<numberOfTimes;i++)
+        for(int i = 0; i < numberOfTimes; i++)
         {
             newString += str;
         }
