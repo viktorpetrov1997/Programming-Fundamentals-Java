@@ -13,12 +13,11 @@ public class OddTimes
 
         int result = 0;
 
-        for (int i = 0; i < numbers.length; i++)
+        for(int i = 0; i < numbers.length; i++)
         {
             result ^= numbers[i];
         }
 
         System.out.println(result);
-
     }
 }

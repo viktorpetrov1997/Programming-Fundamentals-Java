@@ -18,6 +18,7 @@ public class BitAtFirstPosition
             binary.append(digit);
             n /= 2;
         }
+
         System.out.println(binary.length() >= 2 ? binary.charAt(1) : '0');
     }
 }
