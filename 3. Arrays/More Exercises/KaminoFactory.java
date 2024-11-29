@@ -33,7 +33,7 @@ public class KaminoFactory
 
                 if(i != dna.length - 1)
                 {
-                    if(dna[i] == 1 && dna[i+1] == 1)
+                    if(dna[i] == 1 && dna[i + 1] == 1)
                     {
                         sequenceLength++;
                         currentIndex = i + 1;
@@ -60,7 +60,7 @@ public class KaminoFactory
             ++sample;
         }
 
-        System.out.printf("Best DNA sample %d with sum: %d.%n",bestSample,maxSum);
+        System.out.printf("Best DNA sample %d with sum: %d.%n", bestSample, maxSum);
         for(int i : bestDna)
         {
             System.out.print(i + " ");

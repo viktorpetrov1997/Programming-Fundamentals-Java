@@ -17,11 +17,11 @@ public class PascalTriangleSecondWay
             {
                 if(j == 0 || j == i)
                 {
-                    a[i][j]=1;
+                    a[i][j] = 1;
                 }
                 else
                 {
-                    a[i][j]=a[i-1][j-1]+a[i-1][j];
+                    a[i][j] = a[i - 1][j - 1] + a[i - 1][j];
                 }
             }
         }
