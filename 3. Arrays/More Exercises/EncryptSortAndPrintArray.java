@@ -37,7 +37,8 @@ public class EncryptSortAndPrintArray
 
         Arrays.sort(codes);
 
-        /*for(int i = 0; i < codes.length; i++)
+        /*
+        for(int i = 0; i < codes.length; i++)
         {
             for(int j = i + 1; j < codes.length; j++)
             {
@@ -49,7 +50,8 @@ public class EncryptSortAndPrintArray
                     codes[j] = tmp;
                 }
             }
-        }*/
+        }
+        */
 
         for(int i = 0; i < codes.length; i++)
         {

@@ -10,16 +10,15 @@ public class KaminoFactory
         Scanner scanner = new Scanner(System.in);
 
         int length = Integer.parseInt(scanner.nextLine());
-
         int[] bestDna = new int[length];
-        String input = scanner.nextLine();
 
-        int sample = 1;
         int bestSample = 0;
+        int sample = 1;
         int bestIndex = 0;
         int maxSequenceLength = 0;
         int maxSum = 0;
 
+        String input = scanner.nextLine();
         while(!input.equals("Clone them!"))
         {
             int[] dna = Arrays.stream(input.split("!+")).mapToInt(Integer::parseInt).toArray();

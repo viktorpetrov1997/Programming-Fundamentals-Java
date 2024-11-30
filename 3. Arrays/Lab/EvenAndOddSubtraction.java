@@ -33,7 +33,6 @@ public class EvenAndOddSubtraction
         }
 
         int diff = evenSum - oddSum;
-
         System.out.println(diff);
     }
 }

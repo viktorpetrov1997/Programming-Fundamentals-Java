@@ -62,12 +62,14 @@ public class TreasureHunt
 
                 itemsList.subList(startIndex, itemsList.size()).clear();
                 System.out.println();
-                /*int count = Integer.parseInt(commandArr[1]);
+                /*
+                int count = Integer.parseInt(commandArr[1]);
                 count = Math.min(count, itemsList.size());
                 List<String> stolenItems = new ArrayList<>(itemsList.subList(itemsList.size() - count, itemsList.size()));
                 itemsList.removeAll(stolenItems);
                 System.out.print(String.join(", ", stolenItems));
-                System.out.println();*/
+                System.out.println();
+                */
             }
             input = scanner.nextLine();
         }

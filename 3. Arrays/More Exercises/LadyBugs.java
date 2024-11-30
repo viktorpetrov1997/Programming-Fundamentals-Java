@@ -30,7 +30,8 @@ public class LadyBugs
             {
                 field[index] = 1;
             }
-        }*/
+        }
+        */
 
         String input = scanner.nextLine();
         while(!input.equals("end"))

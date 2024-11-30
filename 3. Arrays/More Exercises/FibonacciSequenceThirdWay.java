@@ -2,7 +2,7 @@ package Arrays.MoreExercises;
 
 import java.util.Scanner;
 
-public class FibonacciTestNotIncludesInExercises
+public class FibonacciSequenceThirdWay
 {
     public static void main(String[] args)
     {

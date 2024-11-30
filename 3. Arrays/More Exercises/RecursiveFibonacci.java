@@ -31,11 +31,13 @@ public class RecursiveFibonacci
 
         System.out.print(GetFibonacci(n));
 
-        /*long n = Integer.parseInt(scanner.nextLine());
+        /*
+        long n = Integer.parseInt(scanner.nextLine());
 
         for(int i = 1; i <= n; i++)
         {
             System.out.print(GetFibonacci(i) + " ");
-        }*/ //Way of printing fibonacci numbers in one range from start to finish
+        }
+        */ // Way of printing fibonacci numbers in one range from start to finish
     }
 }
